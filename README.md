@@ -5,7 +5,7 @@ You can use the [editor on GitHub](https://github.com/johnsonOu/xk4w.6/edit/mast
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
 ## CssLink
-https://zo6xul4.github.io/xk4w.6/web/layout.css
+https://zo6xul4.github.io/xk4w.6/web/styles/layout.css
 
 
 
