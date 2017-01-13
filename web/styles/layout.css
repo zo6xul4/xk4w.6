@@ -694,11 +694,11 @@ ol.flex-control-nav li a.flex-active {
     clear: both;
 }
 
-.TitleBox.TBFixed1 {
+.TitleBox.Active {
     position: fixed;
     width: 1000px;
     left: 50%;
-    top: 0;
+    top: 52px;
     margin-left: -500px;
     z-index: 100;
 }
@@ -1423,7 +1423,13 @@ ul.GameJpBox li .Jpt span {
     width: 100%;
     padding: 10px 0;
 }
-
+.GameNav.Active {
+    width: 1000px;
+    position: fixed;
+    background-color: #fff;
+    top: 0px;
+    z-index: 5;
+}
 .GameNav ul {
     float: left;
 }
