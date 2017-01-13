@@ -1903,7 +1903,10 @@ a .GameJumpBox.Free {
     border: 1px solid #FFA800;
     box-shadow: 0 0 5px rgba(255, 162, 0, 50);
 }
-
+.lRMain .InputBox.Warnings {
+    border: 1px solid #FF6050;
+    box-shadow: 0 0 5px rgba(255, 96, 80, 50);
+}
 .lRMain .Prompt {
     font-size: 10px;
     color: #CFCFCF;
