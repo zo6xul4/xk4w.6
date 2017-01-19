@@ -10,7 +10,6 @@ html, body {
 
 
 /*共用樣式*/
-
 .FloatLeft {
     float: left;
 }
@@ -176,7 +175,9 @@ html, body {
     box-shadow: 0 2px 4px rgba(0, 0, 0, .3);
     z-index: 3;
 }
-
+.Header.Fixed {
+    position: fixed;
+}
 .HeaderMain {
     width: 1000px;
     height: 100%;
@@ -421,7 +422,9 @@ ul.HeadrLanguage li.Active a {
     background-color: #D8D8D8;
     z-index: 0;
 }
-
+.Banner.PaddingTop {
+    padding-top: 58px;
+}
 .BannerBg {
     position: absolute;
     width: 100%;
