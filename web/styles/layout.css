@@ -173,7 +173,7 @@ html, body {
     height: 68px;
     background-color: #fff;
     box-shadow: 0 2px 4px rgba(0, 0, 0, .3);
-    z-index: 6;
+    z-index: 110;
 }
 .Header.Fixed {
     position: fixed;
@@ -731,13 +731,15 @@ ol.flex-control-nav li a.flex-active {
 }
 .TitleBox.Active {
     position: fixed;
-    width: 1000px;
-    left: 50%;
+    width: 100%;
+    left: 0;
     top: 110px;
-    margin-left: -500px;
     z-index: 100;
 }
-
+.TitleBox.Active .TitleBoxMain {
+    width: 1000px;
+    margin: 0 auto;
+}
 .TitleBox.Line {
     border-bottom: 1px solid #f1f1f1;
 }
@@ -1494,10 +1496,15 @@ ul.GameJpBox li .Jpt span {
 }
 .GameNav.Active {
     position: fixed;
-    width: 1000px;
+    width: 100%;
     background-color: #fff;
+    left: 0;
     top: 68px;
-    z-index: 5;
+    z-index: 100;
+}
+.GameNav.Active .GameNavMain {
+    width: 1000px;
+    margin: 0 auto;
 }
 .GameNav ul {
     float: left;
