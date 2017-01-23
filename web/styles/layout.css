@@ -743,7 +743,9 @@ ol.flex-control-nav li a.flex-active {
 .TitleBox.Line {
     border-bottom: 1px solid #f1f1f1;
 }
-
+.TitleBox.Active.Line {
+    border: none;
+}
 .TitleBox h2 {
     position: relative;
     font-size: 18px;
