@@ -3418,7 +3418,7 @@ a .GameJumpBox.Free {
     margin-bottom: 20px;
 }
 
-.MemberRightMain .MemberTableBox ul.TableBox li {
+.MemberRightMain .MemberTableBox ul li {
     line-height: 70px;
     border-bottom: 1px solid #dddddd;
     overflow: hidden;
