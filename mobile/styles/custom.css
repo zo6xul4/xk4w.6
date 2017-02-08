@@ -1440,6 +1440,9 @@ input[type="date"] {
   margin-top: 3px;
   font-size: 1.5rem; }
 
+.icon-nav-home.blue, .icon-nav-live800.blue {
+  color: #3EACE9; }
+
 .nav-left-warp {
   width: 44px;
   height: 44px;
@@ -1554,7 +1557,7 @@ input[type="date"] {
   display: block;
   width: 100%;
   height: 100%;
-  color: #6D717A;
+  color: #3EACE9;
   font-size: 1.4rem;
   padding: 0 1.2rem; }
 
@@ -1581,7 +1584,8 @@ input[type="date"] {
   padding: 0 1.2rem; }
 
 .nav-to-warp a p {
-  width: 100%; }
+  width: 100%;
+  font-size: 1.4rem; }
 
 .nav-to-warp.add-icon {
   line-height: 44px;
@@ -1928,6 +1932,24 @@ input[type="date"] {
 
 .footer-icon.icon4 {
   background-image: url("images/footer-icon4.png"); }
+
+.footer-icon.icon1.active {
+  background-image: url("images/footer-icon1-active.png"); }
+
+.footer-icon.icon2.active {
+  background-image: url("images/footer-icon2-active.png"); }
+
+.footer-icon.icon3.active {
+  background-image: url("images/footer-icon3-active.png"); }
+
+.footer-icon.icon4.active {
+  background-image: url("images/footer-icon4-active.png"); }
+
+.footer-icon.icon3.help {
+  background-image: url("images/footer-icon3-help.png"); }
+
+.footer-icon.icon3.help.active {
+  background-image: url("images/footer-icon3-help-active.png"); }
 
 .fn-btn-warp.reddot:before {
   content: "";
@@ -2819,7 +2841,10 @@ input[type="date"] {
 
 .field .label {
   font-size: 1.6rem;
-  width: 7.5rem; }
+  margin-right: 1.5rem; }
+
+.field .label.f-14 {
+  font-size: 1.4rem; }
 
 .field .field-control {
   -webkit-box-flex: 1;
@@ -2835,6 +2860,9 @@ input[type="date"] {
   background-color: transparent;
   font-size: 1.6rem;
   color: #3A3A3A; }
+
+.field .field-control.f-14 input {
+  font-size: 1.4rem; }
 
 .field .field-control input::-webkit-input-placeholder {
   color: #DEDEDE; }
@@ -3464,12 +3492,41 @@ a.recommend-btn {
 .sorttab-warp {
   width: 100%;
   height: 41px;
-  overflow-y: hidden;
+  overflow: hidden;
+  overflow-x: scroll;
+  text-align: center;
+  position: relative; }
+
+.sorttab-warp:after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 10px;
+  background-color: #FFF;
+  margin-top: -10px;
+  z-index: 5;
   border-bottom: 1px solid #D3D4D6;
-  text-align: center; }
+  left: 0; }
+
+.sorttab-line {
+  width: 100%;
+  height: 1px;
+  background-color: #D3D4D6; }
 
 .sorttab-warp::-webkit-scrollbar {
-  display: none; }
+  display: none;
+  width: 0px;
+  background: transparent; }
+
+.sorttab-warp::-webkit-scrollbar-thumb {
+  display: none;
+  width: 0px;
+  background: transparent; }
+
+.sorttab-warp ul {
+  overflow-y: hidden;
+  white-space: nowrap; }
 
 .sorttab-warp ul li {
   position: relative;
@@ -3479,23 +3536,11 @@ a.recommend-btn {
 
 .sorttab-warp ul li a {
   display: block;
-  padding: 9px 18px 11px 18px; }
-
-.sorttab-warp ul {
-  width: 100%;
-  white-space: nowrap; }
+  padding: 11px 18px 11px 18px; }
 
 .sorttab-warp ul li.active {
-  color: #3EACE9; }
-
-.sorttab-warp ul li.active:after {
-  content: "";
-  display: block;
-  position: absolute;
-  width: 100%;
-  height: 3px;
-  background-color: #3EACE9;
-  margin-top: -4px; }
+  color: #3EACE9;
+  z-index: 5; }
 
 .hotgame-title-warp {
   width: 100%;
@@ -5378,6 +5423,9 @@ a.list-box-link {
   font-size: 2.8rem;
   color: #FF9202; }
 
+.final-value.success {
+  padding-bottom: 15px; }
+
 .final-value.success .value-img {
   margin: 0 auto;
   width: 77px;
@@ -5838,7 +5886,8 @@ input[type=radio]:checked + label .checked-icon {
 
 .remind-block p.title {
   color: #3EACE9;
-  padding-bottom: 0.6rem; }
+  padding-bottom: 0.6rem;
+  font-size: 1.8rem; }
 
 .qa {
   font-size: 2rem;
@@ -5868,7 +5917,7 @@ input[type=radio]:checked + label .checked-icon {
   display: inline-block;
   font-size: 1.3rem;
   color: #B1B1B1;
-  vertical-align: top; }
+  vertical-align: middle; }
 
 .list-box.bill-history .date {
   width: 4.5rem;
@@ -5894,52 +5943,52 @@ input[type=radio]:checked + label .checked-icon {
     line-height: 20px; }
 
 .sh-icon.icon1.bill {
-  margin: 0.5rem 1.5rem 0 0;
+  margin: 0rem 1.5rem 0 0;
   width: 42px;
   height: 42px; }
 
 .sh-icon.icon2.bill {
-  margin: 0.5rem 1.5rem 0 0;
+  margin: 0rem 1.5rem 0 0;
   width: 42px;
   height: 42px; }
 
 .sh-icon.icon3.bill {
-  margin: 0.5rem 1.5rem 0 0;
+  margin: 0rem 1.5rem 0 0;
   width: 42px;
   height: 42px; }
 
 .sh-icon.icon4.bill {
-  margin: 0.5rem 1.5rem 0 0;
+  margin: 0rem 1.5rem 0 0;
   width: 42px;
   height: 42px; }
 
 .sh-icon.icon5.bill {
-  margin: 0.5rem 1.5rem 0 0;
+  margin: 0rem 1.5rem 0 0;
   width: 42px;
   height: 42px; }
 
 .sh-icon.icon6.bill {
-  margin: 0.5rem 1.5rem 0 0;
+  margin: 0rem 1.5rem 0 0;
   width: 42px;
   height: 42px; }
 
 .sh-icon.icon7.bill {
-  margin: 0.5rem 1.5rem 0 0;
+  margin: 0rem 1.5rem 0 0;
   width: 42px;
   height: 42px; }
 
 .sh-icon.icon8.bill {
-  margin: 0.5rem 1.5rem 0 0;
+  margin: 0rem 1.5rem 0 0;
   width: 42px;
   height: 42px; }
 
 .sh-icon.icon9.bill {
-  margin: 0.5rem 1.5rem 0 0;
+  margin: 0rem 1.5rem 0 0;
   width: 42px;
   height: 42px; }
 
 .sh-icon.icon10.bill {
-  margin: 0.5rem 1.5rem 0 0;
+  margin: 0rem 1.5rem 0 0;
   width: 42px;
   height: 42px; }
 
@@ -6217,6 +6266,27 @@ ul.filter-block li label.label-filter-name span {
   _::-webkit-full-page-media, _:future, :root .toppromotion .btn {
     margin-top: 2.03045685%;
     padding: 3px 9px 3px; } }
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 3) {
+  .appdownload-warp.right {
+    padding: 10px 4.5px 0px 4.5px; }
+
+  .appdownload-warp.big {
+    padding: 10px 10px 0px 4.5px; }
+
+  .appdownload-warp, .appdownload-warp.right, .appdownload-warp.big {
+    padding-bottom: 15px; }
+
+  .appbanner-warp {
+    padding-top: 150px; }
+
+  .appbanner-warp.left.big {
+    padding-top: 150px; }
+
+  .appbanner-warp.left {
+    background-position: bottom right; }
+
+  .appbanner-warp.big {
+    background-position: bottom right; } }
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
   .banner {
     height: 307px; }
