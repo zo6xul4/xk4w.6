@@ -1503,7 +1503,7 @@ ul.GameJpBox li .Jpt span {
     background-color: #fff;
     left: 0;
     top: 68px;
-    z-index: 100;
+    z-index: 105;
 }
 .GameNav.Active .GameNavMain {
     width: 1000px;
