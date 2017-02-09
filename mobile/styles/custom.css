@@ -5992,6 +5992,44 @@ input[type=radio]:checked + label .checked-icon {
   width: 42px;
   height: 42px; }
 
+.bill-icon {
+  display: inline-block;
+  margin: 0rem 1rem 0 0;
+  width: 35px;
+  height: 35px;
+  background-size: cover;
+  vertical-align: middle; }
+
+.bill-icon.icon1 {
+  background-image: url("images/bill/Bill1.png"); }
+
+.bill-icon.icon2 {
+  background-image: url("images/bill/Bill2.png"); }
+
+.bill-icon.icon3 {
+  background-image: url("images/bill/Bill3.png"); }
+
+.bill-icon.icon4 {
+  background-image: url("images/bill/Bill4.png"); }
+
+.bill-icon.icon5 {
+  background-image: url("images/bill/Bill5.png"); }
+
+.bill-icon.icon6 {
+  background-image: url("images/bill/Bill6.png"); }
+
+.bill-icon.icon7 {
+  background-image: url("images/bill/Bill7.png"); }
+
+.bill-icon.icon8 {
+  background-image: url("images/bill/Bill8.png"); }
+
+.bill-icon.icon9 {
+  background-image: url("images/bill/Bill9.png"); }
+
+.bill-icon.icon10 {
+  background-image: url("images/bill/Bill10.png"); }
+
 .list-box.bill-history .value.right {
   float: right;
   width: 5.2rem;
