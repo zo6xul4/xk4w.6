@@ -1674,24 +1674,23 @@ ul.GameJpBox li .Jpt span {
     overflow: hidden;
     float: left;
 }
-
-.GameBrand, .GameHotNew {
+.GameBH {
     position: absolute;
-    width: 50px;
+}
+.GameBrand, .GameHotNew {
     height: 25px;
     font-size: 14px;
     text-align: center;
     line-height: 25px;
     color: #3A3A3A;
     background-color: #FFC412;
+    padding: 0 10px;
+    float: left;
 }
-
 .GameHotNew {
-    margin-left: 50px;
     color: #fff;
     background-color: #3A3A3A;
 }
-
 .GameJpt {
     position: absolute;
     width: 100%;
@@ -1704,12 +1703,10 @@ ul.GameJpBox li .Jpt span {
     font-size: 14px;
     transition: all ease .1s;
 }
-
 .GameJpt span {
     font-size: 20px;
     margin-right: 5px;
 }
-
 .GameJumpBox {
     position: absolute;
     width: 90%;
