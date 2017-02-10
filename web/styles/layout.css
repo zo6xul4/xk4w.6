@@ -452,7 +452,6 @@ ul.HeadrLanguage li.Active a {
     height: auto;
     padding-bottom: 33.333333%;
     background-color: #D8D8D8;
-    overflow: hidden;
     z-index: 0;
 }
 .BannerBg {
@@ -569,6 +568,35 @@ ol.flex-control-nav li a.flex-active {
     font-size: 16px;
     color: #3b3b3b;
 }
+.SearchOption {
+    position: absolute;
+     width: 600px;
+    height: auto;
+    background-color: #fff;
+    margin-top: 55px;
+    border-radius: 3px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .3);
+}
+.SearchOption ul {
+    width: 100%;
+}
+.SearchOption ul li {
+     width: 100%;
+}
+.SearchOption ul li a {
+    display: block;
+    font-size: 16px;
+    line-height: 24px;
+    color: #666666;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+.SearchOption ul li a:hover {
+    background-color: #ffebd3;
+}
+.SearchOption ul li a span {
+    color:#FF9300;
+}
 
 .SearchBtn {
     width: 50px;
@@ -581,11 +609,9 @@ ol.flex-control-nav li a.flex-active {
     float: right;
     text-indent: -9999px;
 }
-
 .SearchBtn:hover {
     background-color: #ff8a00;
 }
-
 .SearchBtn a {
     display: block;
     width: 100%;
@@ -4495,6 +4521,9 @@ ul.PlayGameRecent li img {
     .SearchBox {
         width: 440px;
     }
+    .SearchOption {
+     width: 510px;
+}
     .Post {
         width: 480px;
     }
