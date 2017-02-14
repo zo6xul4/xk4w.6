@@ -802,34 +802,55 @@ ol.flex-control-nav li a.flex-active {
 .TitleBox h2.Color5 {
     color: #FFB80E;
 }
-
 .TitleBox p {
     font-size: 14px;
     line-height: 35px;
     color: #666666;
 }
-
 .TitleBox span {
     font-size: 14px;
     line-height: 35px;
 }
-
 .TitleBox span a {
     color: #999999;
     text-decoration: none;
 }
-
 .TitleBox span a:hover {
     text-decoration: underline;
 }
-
+.TitleBoxNav {
+    float: left;
+    margin-left: 30px;
+}
+.TitleBoxNav ul {
+    overflow: hidden;
+}
+.TitleBoxNav ul li {
+    float: left;
+    font-size: 14px;
+    line-height: 35px;
+    border-radius: 3px;
+    overflow: hidden;
+    margin: 0 2.5px;
+}
+.TitleBoxNav ul li a {
+    display: block;
+    color: #666666;
+    text-decoration: none;
+    padding: 0 10px;
+}
+.TitleBoxNav ul li.Active {
+    background-color: #FF9300;
+}
+.TitleBoxNav ul li.Active a {
+    color: #fff;
+}
 ul.OfferBox {
     width: 100%;
     height: auto;
     overflow: hidden;
     margin-bottom: 20px;
 }
-
 ul.OfferBox li {
     position: relative;
     width: 220px;
@@ -1844,7 +1865,7 @@ a .GameJumpBox.Free {
     height: 250px;
     float: left;
     border: 1px solid #f1f1f1;
-    margin-bottom: 40px;
+    margin-bottom: 15px;
 }
 
 .OfferBox2.MarginLeft {
