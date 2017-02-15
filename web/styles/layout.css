@@ -819,8 +819,8 @@ ol.flex-control-nav li a.flex-active {
     text-decoration: underline;
 }
 .TitleBoxNav {
-    float: left;
-    margin-left: 30px;
+    float: right;
+    margin-bottom: 10px;
 }
 .TitleBoxNav ul {
     overflow: hidden;
@@ -1417,7 +1417,6 @@ ul.GameJpBox li .Jpt span {
     width: 400px;
     min-height: 90px;
     float: left;
-    margin-bottom: 30px;
 }
 
 .PgDownLoad ul li {
