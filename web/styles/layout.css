@@ -1694,6 +1694,10 @@ ul.GameJpBox li .Jpt span {
     overflow: hidden;
     float: left;
 }
+.GamesBox img {
+    width: 100%;
+    height: 100%;
+}
 .GameBH {
     position: absolute;
 }
