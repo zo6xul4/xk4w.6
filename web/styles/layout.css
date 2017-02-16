@@ -105,7 +105,6 @@ html, body {
 .BtnStyle1.Active a {
     opacity: 1;
 }
-
 .Btn {
     width: 140px;
     height: 35px;
@@ -122,7 +121,7 @@ html, body {
     height: 100px;
 }
 
-.Btn:hover {
+.Btn.Active:hover {
     background-color: #ff8a00;
 }
 
@@ -4070,7 +4069,6 @@ ul.HelpCenterArticleColumn li {
     font-size: 14px;
     margin-left: 10px;
 }
-
 .PlayGameFooter .Btn a {
     opacity: .5;
 }
