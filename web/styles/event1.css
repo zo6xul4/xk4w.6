@@ -2,6 +2,57 @@ body {
     background-color: #fff;
 }
 /*優惠活動內頁*/
+.OfferHeader {
+    width: 100%;
+    min-width: 320px;
+    height: 55px;
+    border-bottom: 1px solid #dddddd;
+}
+.OfferHeaderMain {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.OfferHeaderLogo {
+    width: 110px;
+    height: 25px;
+    background-image:url(../styles/images/logo.png);
+    background-size:cover;
+    text-indent: -9999px;
+    float: left;
+    margin-top: 15px;
+    margin-left: 10px;
+}
+.OfferHeaderLogo a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.OfferHeaderMain .Btn {
+    float: right;
+    width:95px;
+    height: 30px;
+    font-size: 14px;
+    line-height: 30px;
+    margin-top: 12.5px;
+    margin-right: 10px;
+}
+.OfferfFooter {
+    width: 100%;
+    padding:20px 0 30px;
+    background-color: #f5f5f5;
+    border-top: 1px solid #dddddd;
+    clear: both;
+}
+.OfferfFooterMain {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.OfferfFooterMain p.CopyRight {
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+    color: #666666;
+}
 .OfferBanner {
     position: relative;
     width: 100%;
@@ -37,9 +88,10 @@ body {
     margin: 0 auto;
 }
 .OfferArticle {
-    width: 970px;
+    max-width: 970px;
     height: auto;
-    margin: 0 auto 50px;
+    overflow: hidden;
+    margin: 0 auto 60px;
     padding: 0 10px;
 }
 .OfferArticleLR {
@@ -77,7 +129,6 @@ body {
     font-size: 14px;
     text-align: center;
     float: left;
-    margin-left: 40px;
     cursor: pointer;
 }
 .OfferArticleLR ul.Safety li .Icon {
@@ -130,6 +181,9 @@ body {
     color: #666666;
 }
 /*共用*/
+.TextCenter {
+    text-align: center;
+}
 .FloatLeft {
     float: left;
 }
@@ -207,6 +261,10 @@ body {
 }
 }*/
 @media screen and (max-width: 768px) {
+.OfferHeaderMain {
+    width:100%;
+    margin:inherit;
+}
 .OfferBanner img {
     margin-left: -900px;
 }
@@ -232,14 +290,13 @@ body {
     margin:0 5px;
 }
 }
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 710px) {
 .OffertTitle {
     position: absolute;
     width: 100%;
     left: 0;
     margin-top:inherit;
     margin-left:0;
-    padding: 0 15px;
     bottom: 20px;
 }
 .OffertTitle h2 {
@@ -247,7 +304,6 @@ body {
     color: #fff;
     text-align: center;
     text-shadow:0 0 10px rgba(0,0,0,.5);
-    margin-bottom: inherit;
 }
 .OffertTitle p {
     font-size: 16px;
@@ -287,13 +343,13 @@ body {
 .OfferArticleLR ul.Safety li p {
     margin-bottom: 20px;
 }
-.FloatLeft {
+/*.FloatLeft {
     float: none;
 }
 .FloatRight {
     float: none;
-}
-.Btn {
+}*/
+.OfferArticleLR .Btn {
     width: 100%;
     height: 40px;
     line-height: 40px;
