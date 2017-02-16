@@ -38,6 +38,7 @@ html, body {
 
 .MarginBottom10 {
     margin-bottom: 10px;
+
 }
 
 .MarginBottom20 {
@@ -1674,17 +1675,21 @@ ul.GameJpBox li .Jpt span {
 }
 
 .GamesMain {
+    position: relative;
     width: 100%;
     height: auto;
     overflow: hidden;
+    visibility: visible;
 }
-
+.GamesMain ul {
+    position: relative;
+}
 .GamesMain ul li {
     width: 100%;
     height: auto;
     overflow: hidden;
+    float: left;
 }
-
 .GamesBox {
     position: relative;
     width: 235px;
@@ -4037,19 +4042,19 @@ ul.HelpCenterArticleColumn li {
 .PlayGameFooter .SelectBox {
     margin-left: 20px;
 }
-
 .PlayGameFooter .SelectBox label {
     height: 35px;
     line-height: 35px;
 }
-
+.PlayGameFooter .SelectMain {
+    padding-right: 25px;
+}
 .PlayGameFooter .Select {
     width: inherit;
     min-width: 100px;
     height: 33px;
     line-height: 33px;
 }
-
 .PlayGameFooter .Option {
     top: inherit;
     bottom: 33px;
