@@ -1684,7 +1684,7 @@ ul.GameJpBox li .Jpt span {
     position: relative;
 }
 .GamesMain ul li {
-    width: 100%;
+    width: 1000px;
     height: auto;
     overflow: hidden;
     float: left;
