@@ -5307,6 +5307,15 @@ a.list-box-link {
 .amount-available-number {
   color: #3EACE9; }
 
+.list-box .deposit {
+  color: #6D717A; }
+
+.list-box .deposit span {
+  display: inline-block;
+  float: right;
+  padding-right: 36px;
+  color: #666666; }
+
 .money-transfers-box {
   -webkit-box-align: center;
   color: #6D717A;
