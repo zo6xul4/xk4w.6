@@ -12,6 +12,11 @@ body {
 }
 
 /*共用樣式*/
+ input {
+      appearance:none;
+      -moz-appearance:none;
+      -webkit-appearance:none; 
+ }
 .FloatLeft {
     float: left;
 }
@@ -1839,20 +1844,28 @@ a .GameJumpBox.Free {
     opacity: 0;
     transition: all .3s;
 }
-
 .prev {
     left: -32px;
 }
-
 .next {
     background-image: url("images/next.png");
     right: -32px;
 }
-
 .GameAll:hover .prev, .GameAll:hover .next {
     opacity: 1;
 }
-
+.next.Active {
+    right: 50%;
+    margin-right: -532px;
+}
+.prev.Active {
+    left: 50%;
+    margin-left: -532px;
+}
+.prev.Active,.next.Active {
+    position: fixed;
+    top: 200px;
+}
 
 /*優惠活動*/
 
