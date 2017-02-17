@@ -755,6 +755,7 @@ ol.flex-control-nav li a.flex-active {
     padding: 10px 0;
     background-color:rgba(255,255,255,.95);
     clear: both;
+    margin-bottom: -55px;
 }
 .TitleBoxLine {
     position: absolute;
@@ -1686,6 +1687,7 @@ ul.GameJpBox li .Jpt span {
     height: auto;
     overflow: hidden;
     visibility: visible;
+    margin-top: 75px;
 }
 .GamesMain ul {
     position: relative;
