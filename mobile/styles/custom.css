@@ -5254,6 +5254,9 @@ a.list-box-link {
     padding: 0 0 0 10px;
     color: #6D717A; }
 
+.list-box .center {
+  text-align: center; }
+
 .table-warp {
   padding: 15px; }
 
