@@ -7,7 +7,9 @@ a, dl, dt, dd, b, body, em, ul, li, i, span, h1, h2, h3, h4, h5, h6, p, select, 
 html, body {
     height: 100%;
 }
-
+body {
+    min-width: 1040px;
+}
 
 /*共用樣式*/
 .FloatLeft {
