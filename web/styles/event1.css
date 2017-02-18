@@ -310,7 +310,9 @@ body {
     position: relative;
     left:inherit;
     transform:inherit;
-    bottom: inherit;
+    bottom:inherit;
+    z-index: 5;
+    padding-top: 20px;
 }
 .OfferPrompt:after {
     display: none;
@@ -318,12 +320,7 @@ body {
 .OfferPb:hover .OfferPrompt {
     bottom: inherit;
 }
-.OfferPrompt ul {
-     padding: 15px 0;
-     border-radius: inherit;
-    background-color:inherit;
-    box-shadow:inherit;
-}
+
 .OfferPrompt ul li {
     font-size: 14px;
     color: #333333;
