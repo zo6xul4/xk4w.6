@@ -1,6 +1,8 @@
 body {
     background-color: #fff;
+    min-width: inherit;
 }
+
 /*優惠活動內頁*/
 .OfferHeader {
     width: 100%;
