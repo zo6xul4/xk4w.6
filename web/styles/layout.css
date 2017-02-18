@@ -751,7 +751,6 @@ ol.flex-control-nav li a.flex-active {
     position: relative;
     width: 100%;
     height: auto;
-    overflow: hidden;
     padding: 10px 0;
     background-color:rgba(255,255,255,.95);
     clear: both;
@@ -772,7 +771,9 @@ ol.flex-control-nav li a.flex-active {
     z-index: 100;
 }
 .TitleBox.Active .TitleBoxMain {
+    position: relative;
     width: 1000px;
+    height: 100%;
     margin: 0 auto;
 }
 .TitleBox.Line {
@@ -1855,18 +1856,6 @@ a .GameJumpBox.Free {
 }
 .GameAll:hover .prev, .GameAll:hover .next {
     opacity: 1;
-}
-.next.Active {
-    right: 50%;
-    margin-right: -532px;
-}
-.prev.Active {
-    left: 50%;
-    margin-left: -532px;
-}
-.prev.Active,.next.Active {
-    position: fixed;
-    top: 200px;
 }
 
 /*優惠活動*/
