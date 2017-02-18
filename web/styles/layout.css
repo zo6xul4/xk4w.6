@@ -42,9 +42,6 @@ body {
 .Margin10 {
     margin: 0 10px;
 }
-.MarginBottommMinus55 {
-    margin-bottom: -55px;
-}
 .MarginBottom10 {
     margin-bottom: 10px;
 
@@ -756,6 +753,10 @@ ol.flex-control-nav li a.flex-active {
     padding: 10px 0;
     background-color:rgba(255,255,255,.95);
     clear: both;
+}
+.TitleBox.MarginBottommMinus55 {
+    margin-bottom: -55px;
+    overflow:visible;
 }
 .TitleBoxLine {
     position: absolute;
