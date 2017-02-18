@@ -15,7 +15,7 @@ body {
  input {
       appearance:none;
       -moz-appearance:none;
-      -webkit-appearance:none; 
+      -webkit-appearance:none;
  }
 .FloatLeft {
     float: left;
@@ -42,12 +42,13 @@ body {
 .Margin10 {
     margin: 0 10px;
 }
-
+.MarginBottommMinus55 {
+    margin-bottom: -55px;
+}
 .MarginBottom10 {
     margin-bottom: 10px;
 
 }
-
 .MarginBottom20 {
     margin-bottom: 20px;
 }
@@ -751,10 +752,10 @@ ol.flex-control-nav li a.flex-active {
     position: relative;
     width: 100%;
     height: auto;
+    overflow: hidden;
     padding: 10px 0;
     background-color:rgba(255,255,255,.95);
     clear: both;
-    margin-bottom: -55px;
 }
 .TitleBoxLine {
     position: absolute;
@@ -4380,7 +4381,7 @@ ul.PlayGameRecent li img {
     }
     .Header {
         height: 58px;
-    } 
+    }
     .Logo {
         margin-top: 16px;
     }
@@ -4451,7 +4452,6 @@ ul.PlayGameRecent li img {
     text-align: center;
     padding-top: px;
     clear: both;
-
 }
 
 .Page ul {
@@ -4502,7 +4502,6 @@ ul.PlayGameRecent li img {
     font-size: 14px;
     position: relative;
     top: -9px;
-    padding: 8px;
 }
 
 .PageInput input {
@@ -4543,6 +4542,7 @@ ul.PlayGameRecent li img {
     background-color: #3eace9;
     cursor: pointer;
     border-radius: 3px;
+    padding: 5px;
 }
 
 .PagePre {
@@ -4805,7 +4805,7 @@ ul.PlayGameRecent li img {
     border: 1px solid #DDDDDD;
     border-radius: 3px;
     overflow: hidden;
-    height: 25px;
+    height: 31px;
     background: ;
     margin: 0 5px;
     text-indent: 10px;
@@ -5192,7 +5192,7 @@ p.Suggest i {
 .supicon {
     width: 96px;
     height: 96px;
-    position:relative;
+    position: relative;
     margin: 0 auto;
 }
 
@@ -5200,20 +5200,18 @@ p.Suggest i {
     text-align: center;
     font-size: 14px;
     color: #666666!important;
-
 }
 
-.suptext span{
+.suptext span {
     color: #ff9b71!important;
-        line-height: 20px;
+    line-height: 20px;
 }
 
-.supboxmain li.Active{
+.supboxmain li.Active {
     cursor: pointer;
-
 }
 
-.LightBoxMainTranscation{
+.LightBoxMainTranscation {
     position: fixed;
     width: 900px;
     padding: 30px;
@@ -5225,7 +5223,14 @@ p.Suggest i {
     top: 50px;
     z-index: 2;
 }
+
+.w1000{
+    width: 1000px;
+}
+
+
 /*交易紀錄表格樣式*/
+
 .TableStyle3 table {
     width: 100%;
     border: 1px solid #dddddd;
@@ -5251,11 +5256,9 @@ p.Suggest i {
     text-align: center;
 }
 
-
 .TableStyle3.TextCenter table tr td {
     text-align: center;
     text-indent: inherit;
-
 }
 
 .TableStyle3 table tr td p {
@@ -5269,6 +5272,7 @@ p.Suggest i {
 
 
 /*認證選單*/
+
 .Omoveiconbox {
     height: 0;
     background: #22212e;
@@ -5280,10 +5284,12 @@ p.Suggest i {
     overflow: hidden;
     transition: all ease-out .3s;
 }
+
 .Omoveh:hover .Omoveiconbox {
     height: 100px;
 }
-.Omoveicon{
+
+.Omoveicon {
     position: relative;
     height: 20px;
     cursor: pointer;
@@ -5291,22 +5297,28 @@ p.Suggest i {
     border-radius: 50px;
     display: inline-block;
     margin: 0 5px;
-
 }
+
 .J-Omoveicon0 {
     margin: 0 0;
 }
+
 .Omoveicon:hover {
     background: #00aaee;
 }
+
 .Omoveicon.checkok:hover {
     width: 20px;
     background: inherit;
 }
-.Omoveicon.checkok:hover .Omoveicontext p  {
-  display:none;
+
+.Omoveicon.checkok:hover .Omoveicontext p {
+    display: none;
 }
+
+
 /*認證框*/
+
 .tell {
     opacity: 0;
     position: absolute;
@@ -5324,6 +5336,7 @@ p.Suggest i {
     pointer-events: none;
     transition: all .3s;
 }
+
 .tell::after {
     position: absolute;
     content: "";
@@ -5334,10 +5347,12 @@ p.Suggest i {
     margin-left: -5px;
     bottom: -10px;
 }
+
 .Omoveicon:hover .tell {
-    opacity:1;
-  top: -30px;
+    opacity: 1;
+    top: -30px;
 }
+
 
 /*認證ICON*/
 
@@ -5350,6 +5365,7 @@ p.Suggest i {
     float: left;
     background-position: 0 0;
 }
+
 .Omoveicon.checkok .Omoveicontext.icon-name i {
     background-position: 0 -21px;
 }
@@ -5365,33 +5381,1171 @@ p.Suggest i {
 .Omoveicontext.icon-mail i {
     background-position: 0 -84px;
 }
+
 .Omoveicon.checkok .Omoveicontext.icon-mail i {
     background-position: 0 -105px;
 }
+
+
 /*認證ICON位移*/
 
 .Omoveicontext p {
-  display: inline-block;
-  width: 0;
-  line-height: 20px;
-  float: left;
-  text-align: center;
-  text-indent: -4px;
-  line-height: 18px;
-  overflow: hidden;
-  white-space:nowrap;
-  transition: width .3s;
-}
-.Omoveicon:hover .Omoveicontext p {
-  width: 45px;
+    display: inline-block;
+    width: 0;
+    line-height: 20px;
+    float: left;
+    text-align: center;
+    text-indent: -4px;
+    line-height: 18px;
+    overflow: hidden;
+    white-space: nowrap;
+    transition: width .3s;
 }
 
-.Omoveicontext  {
+.Omoveicon:hover .Omoveicontext p {
+    width: 45px;
+}
+
+.Omoveicontext {
     color: #fff;
     font-size: 12px;
     line-height: 18px;
 }
-.Omoveicontext p.ph{
-  text-indent: -6px;
-  line-height: 18px;
+
+.Omoveicontext p.ph {
+    text-indent: -6px;
+    line-height: 18px;
+}
+
+
+/*分享計畫*/
+
+
+/*總額帳戶*/
+
+.PlanContent {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.PlanMain-account {
+    width: 990px;
+    margin: 0 auto;
+}
+
+.PlanMain-account ul li {
+    display: inline-block;
+    width: 33%;
+}
+
+.PlanMain-account ul li h1 {
+    font-size: 18px;
+    text-indent: 1em;
+}
+
+.PlanMain-account ul li h2 {
+    width: 330px;
+    height: 70px;
+    font-size: 30px;
+    line-height: 60px;
+    text-align: center;
+    color: #3eace9;
+    border-right: 1px dashed #dddddd;
+}
+
+.PlanMain-account ul li h2.nobori {
+    border-right: 0px dashed #dddddd;
+}
+
+.ShareCopy {
+    font-size: 14px;
+    margin-top: 27px;
+}
+
+.ShareCopy p {
+    display: inline-block;
+    padding-left: 15px;
+    padding-right: 15px;
+    line-height: 20px;
+}
+
+.SharecopyBtn {
+    color: #fff;
+    background-color: #3eace9;
+    cursor: pointer;
+    border-radius: 3px;
+    padding: 5px;
+    font-size: 13px;
+}
+
+
+/*交易*/
+
+.PlanMain-transaction {
+    width: 990px;
+    height: 55px;
+    margin: 20px auto 0px auto;
+    background: #f5f5f5;
+}
+
+.PlanMain-transaction h1 {
+    float: left;
+    line-height: 48px;
+    text-indent: 15px;
+    font-size: 18px;
+}
+
+.PlanMain-transaction h1 span {
+    font-size: 14px;
+    color: #666;
+}
+
+.PlanMain-transaction .Cal {
+    float: right;
+    position: relative;
+    margin-top: 8px;
+}
+
+.PlanMain-transaction .Cal .SelectBox {
+    position: relative;
+    height: 35px;
+    border: 1px solid #f5f5f5;
+    background-color: #fff;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.PlanMain-transaction .Cal .Select {
+    position: relative;
+    width: 150px;
+    height: 35px;
+    border-radius: 3px;
+    border: 1px solid #dddddd;
+    font-size: 14px;
+    color: #333333;
+    line-height: 38px;
+    text-indent: 10px;
+    cursor: pointer;
+}
+
+.PlanMain-transaction .Cal .SelectMain {
+    width: inherit;
+    padding: 0 8px 0 8px;
+}
+
+.PlanMain-transaction .Cal .SelectBox .Select .Option {
+    display: none;
+    position: absolute;
+    width: 100%;
+    max-height: 150px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    border: 1px solid #dddddd;
+    background-color: #FFF;
+    top: 33px;
+    left: -1px;
+    z-index: 1;
+}
+
+.PlanMain-transaction .MemberBtn {
+    width: 50px;
+    text-align: center;
+    margin-top: 3px;
+}
+
+
+/*總分析*/
+
+.PlanMain-all1 {
+    width: 990px;
+    margin: 0 auto;
+    border-bottom: 1px solid #dddddd;
+    overflow: hidden;
+    position: relative;
+}
+
+.PlanMain-all1 .Main {
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.PlanMain-all1 .Main h1 {
+    font-size: 18px;
+}
+
+.PlanMain-all1 .Main h1 span {
+    color: #fab400;
+    padding-left: 10px;
+}
+
+
+/*圓餅*/
+
+.PlanMain-all1 .earningsPie {
+    width: 35%;
+    position: relative;
+    float: left;
+}
+
+.PlanMain-all1 .earningsPie .earningsPieMain {
+    width: 60%;
+    height: 60%;
+    margin: 20px auto;
+}
+
+
+/*條列*/
+
+.PlanMain-all1 .earningslist {
+    width: 65%;
+    position: relative;
+    float: left;
+}
+
+.PlanMain-all1 .earningslist .earningslistMain {
+    width: 100%;
+    overflow: hidden;
+}
+
+.PlanMain-all1 .earningslist .earningslistMain .opbox {
+    width: 100%;
+    margin: 30px auto;
+    display: inline-block;
+    background-color: #fbf8f8;
+}
+
+.PlanMain-all1 .earningslist .earningslistMain .opbox .elmLeft {
+    width: 50%;
+    float: left;
+}
+
+.PlanMain-all1 .earningslist .earningslistMain .opbox .elmLeft ul li {
+    width: 100%;
+    height: 30px;
+    border-bottom: 1px solid #ddd;
+    list-style-type: none;
+    font-size: 14px;
+    line-height: 30px;
+}
+
+.elmLeft ul {
+    background-color: #fff;
+}
+
+.elmLeft li.Active {
+    background-color: #fbf8f8;
+    cursor: pointer;
+}
+
+.arw:after {
+    content: ">";
+    /*vertical-align: middle;*/
+    line-height: inherit;
+}
+
+.elmLeft ul li .text {
+    float: left;
+    color: #666666;
+    padding-left: 10px;
+}
+
+.elmLeft ul li .textmoney {
+    float: right;
+    padding-right: 10px;
+}
+
+.PlanMain-all1 .earningslist .earningslistMain .opbox .elmRight {
+    width: 50%;
+    float: left;
+    height: auto;
+}
+
+.elmRight .moneylist {
+    padding: 20px;
+    position: relative;
+}
+
+.elmRight .moneylist .mboxstyle {
+    position: absolute;
+    width: 270px;
+    height: 145px;
+    display: none;
+}
+
+.elmRight .moneylist .mboxstyle table {
+    width: 90%;
+    border: 0;
+    font-size: 13px;
+    line-height: 18px;
+    margin-top: 3px;
+}
+
+.mboxstyle table td {
+    padding: 2px;
+    text-align: left;
+    padding: 2px;
+    color: #666;
+}
+
+.mboxstyle td.mboxName {
+    text-align: right;
+}
+
+.mboxstyle td.mboxMoney {
+    text-align: right;
+}
+
+#MB1 {}
+
+#MB2 {}
+
+#MB3 {}
+
+#MB4 {}
+
+#MB5 {}
+
+#MB6 {}
+
+
+/*
+.PlanMain-all1 .earningsMore {
+    width: 33.3%;
+    position: relative;
+    background: #ddd;
+    float: left;
+}
+
+.PlanMain-all1 .earningsMore .earningsMoretMain {
+    width: 100%;
+    position: relative;
+    background: #ddd;
+}
+
+.bo {
+    width: 1000px;
+    height: 500px;
+    background: #f00;
+    position: absolute;
+    left: 100px;
+    z-index: 99;
+}
+
+*/
+
+
+/*錢來錢往 轉入轉出*/
+
+.PlanMain-all2 {
+    width: 990px;
+    margin: 0 auto;
+    border-bottom: 1px solid #dddddd;
+    height: 205px;
+}
+
+
+/*錢來錢往*/
+
+.PlanMain-all2 .moneyturn {
+    width: 56%;
+    display: inline-block;
+}
+
+.PlanMain-all2 .moneyturn .moneyturnMain {
+    margin: 20px 20px 36px 20px;
+}
+
+.PlanMain-all2 .moneyturn .moneyturnMain h1 {
+    font-size: 18px;
+}
+
+.PlanMain-all2 .moneyturn .moneyturnMain .h2box {
+    height: 130px;
+    border-right: 1px dashed #dddddd;
+}
+
+.PlanMain-all2 .moneyturn .moneyturnMain .h2box p {
+    font-size: 14px;
+    line-height: 140px;
+    text-align: center;
+}
+
+.PlanMain-all2 .moneyturn .moneyturnMain p span {
+    font-size: 36px;
+    color: #fab400;
+    vertical-align: middle;
+}
+
+
+/*轉入轉出*/
+
+.PlanMain-all2 .details {
+    width: 44%;
+    display: inline-block;
+}
+
+.PlanMain-all2 .details .detailsMain {
+    margin: 40px 25px 0 70px;
+}
+
+.detailsMain ul li {
+    margin-top: 10px;
+    padding: 5px 0;
+}
+
+.detailsMain ul li .text {
+    display: inline-block;
+    font-size: 14px;
+    vertical-align: middle;
+    line-height: 20px;
+    width: 45px;
+}
+
+.detailsMain ul li .center {
+    width: 200px;
+    margin-left: 10px;
+    display: inline-block;
+}
+
+.detailsMain ul li .center p.money {
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.detailsMain ul li .center .line {
+    width: 100%;
+    height: 6px;
+    background: #dddddd;
+    border-radius: 2px;
+}
+
+.detailsMain ul li .center .mline1, .mline2, .mline3 {
+    height: 6px;
+    background: #7ecef4;
+    border-radius: 2px;
+}
+
+.detailsMain ul li .center .mline1 {
+    width: 90%;
+}
+
+.detailsMain ul li .center .mline2 {
+    width: 60%;
+}
+
+.detailsMain ul li .center .mline3 {
+    width: 15%;
+}
+
+.ShareplanMore {
+    text-align: right;
+    color: #3eace9;
+    font-size: 12px;
+    text-decoration: underline;
+}
+
+.ShareplanMore a{
+    color: #3eace9;
+    text-decoration: underline;
+}
+
+
+/*收入分析 朋友分析 廣告點擊*/
+
+.PlanMain-all3 {
+    width: 990px;
+    margin: 0 auto;
+    border-bottom: 1px dashed #dddddd;
+    float: left;
+}
+
+.PlanMain-all3, .PlanMain-all4 h1 {
+    font-size: 14px;
+}
+
+
+/*收入分析 */
+
+.PlanMain-all3 .Income {
+    width: 50%;
+    border-right: 1px dashed #dddddd;
+}
+
+.PlanMain-all3 .Income .IncomeMain {
+    padding: 20px;
+}
+
+.PlanMain-all3 .Income .Incomebox {
+    width: 450px;
+    height: 200px;
+    position: relative;
+    margin: 0 auto;
+}
+
+
+/*朋友分析*/
+
+.PlanMain-all3 .friend {
+    width: 24.9%;
+    border-right: 1px dashed #dddddd;
+}
+
+.PlanMain-all3 .friend .friendMain {
+    padding: 20px;
+}
+
+.PlanMain-all3 .friend .friendMain .text {
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+    display: block;
+    margin-top: 30px;
+}
+
+.PlanMain-all3 .friend .friendMain .text span {
+    font-size: 18px;
+    color: #fab400;
+    letter-spacing: 1px;
+}
+
+.PlanMain-all3 .friend .friendMain .iconBox {
+    padding-top: 40px;
+    padding-bottom: 45px;
+}
+
+.friendMain .iconBox .man {
+    display: inline-block;
+    width: 15px;
+    height: 35px;
+    background: url("images/shareplan/icon-man.png") no-repeat;
+}
+
+.friendMain .iconBox .woman {
+    display: inline-block;
+    width: 18px;
+    height: 35px;
+    background: url("images/shareplan/icon-woman.png") no-repeat;
+}
+
+
+/*廣告點擊*/
+
+.PlanMain-all3 .adv {
+    width: 24.9%;
+}
+
+.PlanMain-all3 .adv .advMain {
+    padding: 20px;
+    position: relative;
+}
+
+.PlanMain-all3 .adv .advMain .text {
+    font-size: 14px;
+    text-align: center;
+    width: 110px;
+    line-height: 24px;
+    position: absolute;
+    left: 110px;
+    top: 120px;
+    color: #666666;
+}
+
+.PlanMain-all3 .adv .advMain .text span {
+    font-size: 18px;
+    color: #fab400;
+    letter-spacing: 1px;
+}
+
+.PlanMain-all3 .adv .advMain .icon {
+    width: 61px;
+    height: 106px;
+    position: relative;
+    top: 50px;
+    left: 15px;
+}
+
+
+/*平台收入分析 渠道存款分析*/
+
+.PlanMain-all4 {
+    width: 990px;
+    margin: 0 auto;
+    border-bottom: 1px solid #dddddd;
+    float: left;
+}
+
+
+/*平台收入分析*/
+
+.PlanMain-all4 .platform {
+    width: 50%;
+    display: inline-block;
+    margin-left: 1px;
+}
+
+.PlanMain-all4 .platform .platformMain {
+    padding: 20px;
+    border-right: 1px dashed #dddddd;
+}
+
+.PlanMain-all4 .platform .platformMain .listbox {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+.PlanMain-all4 .platform .platformMain .listbox ul li {
+    width: 99%;
+    height: 40px;
+    border-bottom: 1px solid #ddd;
+    float: left;
+}
+
+.pflist {
+    width: 20%;
+    float: left;
+    line-height: 40px;
+    font-size: 14px;
+}
+
+.pftage {
+    position: relative;
+    width: 55%;
+    line-height: 40px;
+    float: left;
+}
+
+.pftage .text {
+    width: 60px;
+    color: #fab400;
+    float: left;
+}
+
+.pftage .linebox {
+    width: 170px;
+    height: 40px;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.linebox .linebg {
+    width: 60%;
+    height: 6px;
+    border-radius: 3px;
+    background: #ff9e00;
+    vertical-align: middle;
+}
+
+.pfmoney {
+    width: 20%;
+    float: left;
+    line-height: 40px;
+    text-align: right;
+}
+
+.PlanMain-all4 .advchannel {
+    width: 49.9%;
+    display: inline-block;
+}
+
+.PlanMain-all4 .advchannel .advchannelMain {
+    padding: 20px;
+    margin-top: 10px;
+    overflow: hidden;
+}
+
+.PlanMain-all4 .advchannel .advchannelMain .piechart {
+    width: 50%;
+    float: left;
+}
+
+.PlanMain-all4 .advchannel .advchannelMain .piechart .box {
+    width: 50%;
+    height: 50%;
+    margin: 30px auto;
+}
+
+.PlanMain-all4 .advchannel .advchannelMain .listbox {
+    width: 50%;
+    float: left;
+}
+
+.PlanMain-all4 .advchannel .advchannelMain .listbox ul li {
+    width: 180%;
+    height: 40px;
+    border-bottom: 1px solid #ddd;
+    float: left;
+    list-style-type: none;
+}
+
+.advlist {
+    width: 50%;
+    float: left;
+    line-height: 40px;
+    font-size: 14px;
+}
+
+.advmoney {
+    width: 50%;
+    line-height: 40px;
+    float: left;
+    text-align: right;
+}
+
+.moneyturn, .details, .Income, .friend, .adv, .advchannel, .platform {
+    float: left;
+}
+
+
+/*代理人明細表格樣式*/
+
+.TableStyle4 table {
+    width: 100%;
+    border: 1px solid #dddddd;
+}
+
+
+/*表格樣式*/
+
+.TableStyle4 {
+    width: 100%;
+    height: auto;
+    font-size: 14px;
+    color: #3eace9;
+}
+
+.TableStyle4 table tr td {
+    border-left: 1px solid #dddddd;
+    border-right: 1px solid #dddddd;
+    border-top: 1px dashed #dddddd;
+    border-bottom: 1px dashed #dddddd;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    line-height: 22px;
+    text-align: center;
+}
+
+.TableStyle4.TextCenter table tr td {
+    text-align: center;
+    text-indent: inherit;
+}
+
+.TableStyle4 table tr td p {
+    margin-bottom: 0;
+}
+
+.TableStyle4 table tr td.Title {
+    color: #333333;
+    background-color: #f5f5f5;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.TableStyle4 tr:nth-child(odd) {
+    background-color: #fafafa;
+}
+
+
+/*表格樣式-營運報表  推廣報表  月結單 */
+
+.TableStyle5 table {
+    width: 100%;
+    border: 1px solid #dddddd;
+}
+
+.TableStyle5 {
+    width: 100%;
+    height: auto;
+    font-size: 14px;
+    color: #3eace9;
+}
+
+.TableStyle5 table tr td {
+    border-left: 1px solid #dddddd;
+    border-right: 1px solid #dddddd;
+    border-top: 1px dashed #dddddd;
+    border-bottom: 1px dashed #dddddd;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    line-height: 22px;
+    text-align: center;
+}
+
+.TableStyle5.TextCenter table tr td {
+    text-align: center;
+    text-indent: inherit;
+}
+
+.TableStyle5 table tr td p {
+    margin-bottom: 0;
+}
+
+.TableStyle5 table tr td.Title {
+    color: #333333;
+    background-color: #f5f5f5;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.TableStyle5 tr:nth-child(odd) {
+    background-color: #fafafa;
+}
+
+
+
+/*表格樣式-客戶報表*/
+
+.TableStyle6 table {
+    width: 100%;
+    border: 1px solid #dddddd;
+}
+
+.TableStyle6 {
+    width: 100%;
+    height: auto;
+    font-size: 14px;
+    color: #3eace9;
+}
+
+.TableStyle6 table tr td {
+    border-left: 1px solid #dddddd;
+    border-right: 1px solid #dddddd;
+    border-top: 1px dashed #dddddd;
+    border-bottom: 1px dashed #dddddd;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    line-height: 22px;
+    text-align: center;
+}
+
+.TableStyle6.TextCenter table tr td {
+    text-align: center;
+    text-indent: inherit;
+}
+
+.TableStyle6 table tr td p {
+    margin-bottom: 0;
+}
+
+.TableStyle6 table tr td.Title {
+    color: #333333;
+    background-color: #f5f5f5;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.TableStyle6 tr:nth-child(odd) {
+    background-color: #fafafa;
+}
+
+
+
+
+
+
+
+/*代理人管理頁面明細*/
+
+.wealthBox {
+    margin: 20px auto;
+}
+
+.wealthlist {
+    height: 264px;
+    border: 1px solid #dddddd;
+    overflow: hidden;
+}
+
+.wealthlist_lef {
+    width: 60%;
+    float: left;
+    overflow: hidden;
+}
+
+.wealthlist_lef .padd {
+    padding: 40px;
+}
+
+.wealthlist_lef .totalamount {
+    border-bottom: 1px solid #dddddd;
+    height: 90px;
+}
+
+ .totalamount p{
+font-size: 13px;
+color: #999;
+line-height: 18px;
+ }
+
+ .totalamount .txt{
+
+ }
+
+.totalamount i{
+  display: inline-block;
+  vertical-align: middle;
+  width: 15px;
+  height: 16px;
+  background: url("images/shareplan/moneyicon.png") no-repeat;
+  margin: 0 5px;
+  }
+
+  .totalamount h1{
+    font-size: 40px;
+    color: #ffae00;
+    float: left;
+    padding-right: 30px;
+    line-height: 45px;
+  }
+
+  .totalamount .MemberBtn {
+    width: 90px;
+    height: 36px;
+    text-align: center;
+    line-height: 36px;
+    font-size: 14px;
+    overflow: hidden;
+    border-radius: 3px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    margin-top: 4px;
+  }
+
+.totalamount .dontMemberBtn{
+  width: 90px;
+  height: 40px;
+  text-align: center;
+  line-height:40px;
+  font-size: 14px;
+  color: #666;
+}
+
+.totalamount .dontMemberBtn a{
+    color: #666;
+    text-decoration: none;
+}
+
+
+.totalamount .MemberBtn.Active a {
+      background-color: #3eace9;
+  }
+
+.totalamount .MemberBtn.Active a:hover {
+      background-color: #46bdff;
+  }
+
+
+.wealthlist_lef .padd .mbox {
+    padding-top: 30px;
+}
+
+.wealthlist_lef .padd .mbox p{
+  color: #999999;
+  font-size: 12px;
+  line-height: 24px;
+
+}
+
+
+.wealthlist_lef .padd .mbox h1{
+  color:#00aaee;
+  font-size: 30px;
+
+}
+
+.wealthlist_lef .padd .mbox span{
+  color:#00aaee;
+  font-size: 12px;
+  padding-left: 15px;
+  text-decoration: underline;
+}
+
+.wealthlist_lef .padd .mbox span a{
+  color:#46bdff;
+}
+
+
+.wealthlist_lef .padd .income {
+    float: left;
+    background-color: ;
+    width: 50%;
+    height: 128px;
+    margin-bottom: 20px;
+}
+
+.icbr {
+    border-right: 1px solid #dddddd;
+    height: 85px;
+}
+
+.wealthlist_lef .padd .expenditure {
+    float: left;
+    width: 50%;
+}
+
+.erxbr {
+    padding: 0 25px;
+}
+
+/*右側*/
+.wealthlist_rig {
+    width: 40%;
+    float: right;
+    overflow: hidden;
+    background-color: #fbfafa;
+    height: 265px;
+}
+
+.wealthlist_rig p{
+  font-size: 12px;
+  color: #999999;
+  line-height: 24px;
+
+}
+
+.wealthlist_rig h1{
+  font-size: 24px;
+  color: #666666;
+  line-height: 30px;
+
+}
+
+
+.wealthlist_rig .padd {
+    padding: 30px 20px;
+}
+
+.wealthlist_rig .padd .listbox {
+    height: 100px;
+}
+
+.librb {
+    border-bottom: 1px dashed #dddddd;
+}
+
+.librr {
+    border-right: 1px dashed #dddddd;
+}
+
+.wealthmTop20 {
+    margin-top: 20px;
+}
+
+.listbox-item {
+    width: 49%;
+    display: inline-block;
+    height: 95px;
+}
+
+.listbox-item div.text {
+    padding: 20px 30px;
+}
+
+
+/*財富報表表格*/
+
+.wealthTab {
+    padding: 0;
+}
+
+.wealthTab .navbox {
+    clear: left;
+    width: 100%;
+    margin: 0;
+}
+
+.wealthTab .navbox ul, li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+
+.wealthTab .navbox ul.tab-item {
+    width: 100%;
+    height: 54px;
+    border-left: 1px solid #ddd;
+}
+
+ul.tab-item li {
+    float: left;
+    width: 135px;
+    height: 53px;
+    border-top: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    background-color: #fafafa;
+    color: #0088cc;
+    line-height: 50px;
+    text-align: center;
+
+}
+
+ul.tab-item li.Active {
+    background-color: #fff;
+    color: #666666;
+    border-bottom:1px solid #fff;
+}
+
+.wealthTab .tab_container{
+  width: 100%;
+  border: 1px solid #ddd;
+	background: #fff;
+
+}
+.wealthTab .tab_container .tab_content {
+  padding: 20px;
+
+}
+/*分享計畫-日曆*/
+.wealthTab .tab_container .calenderMain{
+    border-bottom:1px dashed #d4d4d4;
+    height: 50px;
+    padding: 20px 20px 0 15px;
+}
+
+.tab_container .calenderMain .timebox{
+  float: left;
+  padding-right: 5px;
+}
+
+.tab_container .calenderMain .selbox{
+  float: left;
+}
+
+.tab_container .calenderMain .selbox .Select{
+      width: 110px;
+      height: 33px;
+      line-height: 33px;
+}
+
+.tab_container .calenderMain .MemberBtn{
+  width: 50px;
+  height: 35px;
+}
+
+.tab_container .calenderMain .selbox .Select .SelectMain .Option{
+  position: absolute;
+  width: 100%;
+  max-height: 150px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  border: none;
+  top: 35px;
+  left: inherit;
+  z-index: 2;
 }
