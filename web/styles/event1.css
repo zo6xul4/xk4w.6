@@ -220,6 +220,15 @@ body {
     color: #fff;
     text-decoration: none;
 }
+.Btn.Active a {
+    opacity: .5;
+}
+.Btn.Active:hover {
+    background-color: #FF9E00;
+}
+.Btn.Gray {
+    background-color: #D5D5D5;
+}
 .TableStyle1 {
     width: 100%;
     height: auto;
