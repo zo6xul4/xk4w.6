@@ -7,16 +7,20 @@ a, dl, dt, dd, b, body, em, ul, li, i, span, h1, h2, h3, h4, h5, h6, p, select, 
 html, body {
     height: 100%;
 }
+
 body {
     min-width: 1040px;
 }
 
+
 /*共用樣式*/
- input {
-      appearance:none;
-      -moz-appearance:none;
-      -webkit-appearance:none;
- }
+
+input {
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+}
+
 .FloatLeft {
     float: left;
 }
@@ -36,16 +40,19 @@ body {
 .TextRight {
     text-align: right;
 }
+
 .MarginAuto {
     margin: 0 auto;
 }
+
 .Margin10 {
     margin: 0 10px;
 }
+
 .MarginBottom10 {
     margin-bottom: 10px;
-
 }
+
 .MarginBottom20 {
     margin-bottom: 20px;
 }
@@ -110,6 +117,7 @@ body {
 .BtnStyle1.Active a {
     opacity: 1;
 }
+
 .Btn {
     width: 140px;
     height: 35px;
@@ -180,9 +188,11 @@ body {
     box-shadow: 0 2px 4px rgba(0, 0, 0, .3);
     z-index: 110;
 }
+
 .Header.Fixed {
     position: fixed;
 }
+
 .HeaderMain {
     width: 1000px;
     height: 100%;
@@ -288,6 +298,7 @@ ul.HeaderNav li.DropDown .DropDownBox {
     overflow: hidden;
     top: 68px;
 }
+
 ol.DropDownNav li {
     position: relative;
     width: 100%;
@@ -303,9 +314,10 @@ ul.HeaderNav li:hover ol.DropDownNav li a {
     color: #3b3b3b;
     border: none;
 }
+
 ul.HeaderNav li ol.DropDownNav li i {
     position: relative;
-    min-width:40px;
+    min-width: 40px;
     height: 14px;
     line-height: 14px;
     padding: 0 5px;
@@ -315,6 +327,7 @@ ul.HeaderNav li ol.DropDownNav li i {
     background-color: #f46240;
     margin-left: 15px;
 }
+
 ul.HeaderNav li ol.DropDownNav li i:before {
     content: "";
     position: absolute;
@@ -326,12 +339,15 @@ ul.HeaderNav li ol.DropDownNav li i:before {
     top: 0;
     left: -16px;
 }
+
 ul.HeaderNav li ol.DropDownNav li i.New {
     background-color: #1ec896;
 }
+
 ul.HeaderNav li ol.DropDownNav li i.New:before {
     border-color: transparent #1ec896 transparent transparent;
 }
+
 ul.HeaderNav li:hover ol.DropDownNav li a:hover {
     background-color: #eeeeee;
 }
@@ -408,6 +424,7 @@ ul.HeadrLanguage {
     float: right;
     margin-top: 21px;
 }
+
 ul.HeadrLanguage li {
     width: 24px;
     height: 24px;
@@ -422,27 +439,28 @@ ul.HeadrLanguage li {
 ul.HeadrLanguage li.cn.Active {
     background-position: 0 -24px;
 }
+
 ul.HeadrLanguage li.en {
     background-position: 0 -48px;
 }
+
 ul.HeadrLanguage li.en.Active {
     background-position: 0 -72px;
 }
+
 ul.HeadrLanguage li a {
     display: block;
     width: 100%;
     height: 100%;
 }
 
-ul.HeadrLanguage li:hover {
-}
+ul.HeadrLanguage li:hover {}
 
 ul.HeadrLanguage li:hover a, ul.HeadrLanguage li.Active:hover a {
     color: #fff;
 }
 
-ul.HeadrLanguage li.Active {
-}
+ul.HeadrLanguage li.Active {}
 
 ul.HeadrLanguage li.Active a {
     color: #FF9300;
@@ -459,6 +477,7 @@ ul.HeadrLanguage li.Active a {
     background-color: #D8D8D8;
     z-index: 1;
 }
+
 .BannerBg {
     position: absolute;
     width: 100%;
@@ -573,21 +592,25 @@ ol.flex-control-nav li a.flex-active {
     font-size: 16px;
     color: #3b3b3b;
 }
+
 .SearchOption {
     position: absolute;
-     width: 600px;
+    width: 600px;
     height: auto;
     background-color: #fff;
     margin-top: 55px;
     border-radius: 3px;
     box-shadow: 0 0 5px rgba(0, 0, 0, .3);
 }
+
 .SearchOption ul {
     width: 100%;
 }
+
 .SearchOption ul li {
-     width: 100%;
+    width: 100%;
 }
+
 .SearchOption ul li a {
     display: block;
     font-size: 16px;
@@ -596,11 +619,13 @@ ol.flex-control-nav li a.flex-active {
     text-decoration: none;
     padding: 5px 10px;
 }
+
 .SearchOption ul li a:hover {
     background-color: #ffebd3;
 }
+
 .SearchOption ul li a span {
-    color:#FF9300;
+    color: #FF9300;
 }
 
 .SearchBtn {
@@ -614,9 +639,11 @@ ol.flex-control-nav li a.flex-active {
     float: right;
     text-indent: -9999px;
 }
+
 .SearchBtn:hover {
     background-color: #ff8a00;
 }
+
 .SearchBtn a {
     display: block;
     width: 100%;
@@ -662,7 +689,7 @@ ol.flex-control-nav li a.flex-active {
     font-size: 14px;
     line-height: 40px;
     color: #FF9300;
-    text-shadow: 0 1px 0 rgba(0,0,0,1);
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 1);
     float: left;
 }
 
@@ -675,7 +702,7 @@ ol.flex-control-nav li a.flex-active {
 .PostMain {
     font-size: 14px;
     color: #fff;
-    text-shadow: 0 1px 0 rgba(0,0,0,1);
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 1);
     height: 40px;
     margin: 0 auto;
     overflow: hidden;
@@ -737,27 +764,32 @@ ol.flex-control-nav li a.flex-active {
     line-height: 22px;
     color: #666666;
 }
+
 .PgBox .Pic {
     width: 100%;
     height: auto;
     margin-bottom: 15px;
 }
+
 .PgBox:hover h3 {
     color: #FF9E00;
 }
+
 .TitleBox {
     position: relative;
     width: 100%;
     height: auto;
     overflow: hidden;
     padding: 10px 0;
-    background-color:rgba(255,255,255,.95);
+    background-color: rgba(255, 255, 255, .95);
     clear: both;
 }
+
 .TitleBox.MarginBottomMinus55 {
     margin-bottom: -55px;
-    overflow:visible;
+    overflow: visible;
 }
+
 .TitleBoxLine {
     position: absolute;
     width: 210px;
@@ -765,6 +797,7 @@ ol.flex-control-nav li a.flex-active {
     background-color: #FF9E00;
     bottom: 0px;
 }
+
 .TitleBox.Active {
     position: fixed;
     width: 100%;
@@ -772,18 +805,22 @@ ol.flex-control-nav li a.flex-active {
     top: 110px;
     z-index: 100;
 }
+
 .TitleBox.Active .TitleBoxMain {
     position: relative;
     width: 1000px;
     height: 100%;
     margin: 0 auto;
 }
+
 .TitleBox.Line {
     border-bottom: 1px solid #f1f1f1;
 }
+
 .TitleBox.Active.Line {
     border: none;
 }
+
 .TitleBox h2 {
     position: relative;
     font-size: 18px;
@@ -792,12 +829,15 @@ ol.flex-control-nav li a.flex-active {
     float: left;
     margin-right: 10px;
 }
+
 .TitleBox h2.Color0 {
     color: #ff9d00;
 }
+
 .TitleBox h2.Color1 {
     color: #FB6720;
 }
+
 .TitleBox h2.Color2 {
     color: #7FC55D;
 }
@@ -813,29 +853,36 @@ ol.flex-control-nav li a.flex-active {
 .TitleBox h2.Color5 {
     color: #FFB80E;
 }
+
 .TitleBox p {
     font-size: 14px;
     line-height: 35px;
     color: #666666;
 }
+
 .TitleBox span {
     font-size: 14px;
     line-height: 35px;
 }
+
 .TitleBox span a {
     color: #999999;
     text-decoration: none;
 }
+
 .TitleBox span a:hover {
     text-decoration: underline;
 }
+
 .TitleBoxNav {
     float: right;
     margin-bottom: 10px;
 }
+
 .TitleBoxNav ul {
     overflow: hidden;
 }
+
 .TitleBoxNav ul li {
     float: left;
     font-size: 14px;
@@ -844,24 +891,29 @@ ol.flex-control-nav li a.flex-active {
     overflow: hidden;
     margin: 0 2.5px;
 }
+
 .TitleBoxNav ul li a {
     display: block;
     color: #666666;
     text-decoration: none;
     padding: 0 10px;
 }
+
 .TitleBoxNav ul li.Active {
     background-color: #FF9300;
 }
+
 .TitleBoxNav ul li.Active a {
     color: #fff;
 }
+
 ul.OfferBox {
     width: 100%;
     height: auto;
     overflow: hidden;
     margin-bottom: 20px;
 }
+
 ul.OfferBox li {
     position: relative;
     width: 220px;
@@ -1018,6 +1070,7 @@ ul.GameJpBox li .Jpt span {
 .GameClassBox i.Icon3 {
     background-image: url("images/icon004.png");
 }
+
 .GameClassTip {
     opacity: 0;
     position: absolute;
@@ -1034,6 +1087,7 @@ ul.GameJpBox li .Jpt span {
     margin-left: -30px;
     transition: all ease-out .3s;
 }
+
 .GameClassTip i {
     position: absolute;
     display: block;
@@ -1044,10 +1098,12 @@ ul.GameJpBox li .Jpt span {
     left: 50%;
     margin-left: -5px;
 }
+
 .GameClassBox:hover .GameClassTip {
     top: -30px;
     opacity: 1;
 }
+
 .HotBtn {
     position: relative;
     width: 40px;
@@ -1554,6 +1610,7 @@ ul.GameJpBox li .Jpt span {
     width: 100%;
     padding: 10px 0;
 }
+
 .GameNav.Active {
     position: fixed;
     width: 100%;
@@ -1562,10 +1619,12 @@ ul.GameJpBox li .Jpt span {
     top: 68px;
     z-index: 105;
 }
+
 .GameNav.Active .GameNavMain {
     width: 1000px;
     margin: 0 auto;
 }
+
 .GameNav ul {
     float: left;
 }
@@ -1653,9 +1712,9 @@ ul.GameJpBox li .Jpt span {
 
 .GameListBg {
     position: absolute;
-    width: 420px;
+    width: 540px;
     left: 50%;
-    margin-left: -210px;
+    margin-left: -270px;
     text-align: center;
     padding-top: 10px;
 }
@@ -1692,15 +1751,18 @@ ul.GameJpBox li .Jpt span {
     visibility: visible;
     margin-top: 75px;
 }
+
 .GamesMain ul {
     position: relative;
 }
+
 .GamesMain ul li {
     width: 1000px;
     height: auto;
     overflow: hidden;
     float: left;
 }
+
 .GamesBox {
     position: relative;
     width: 235px;
@@ -1710,13 +1772,16 @@ ul.GameJpBox li .Jpt span {
     overflow: hidden;
     float: left;
 }
+
 .GamesBox img {
     width: 100%;
     height: 100%;
 }
+
 .GameBH {
     position: absolute;
 }
+
 .GameBrand, .GameHotNew {
     height: 25px;
     font-size: 14px;
@@ -1727,10 +1792,12 @@ ul.GameJpBox li .Jpt span {
     padding: 0 10px;
     float: left;
 }
+
 .GameHotNew {
     color: #fff;
     background-color: #3A3A3A;
 }
+
 .GameJpt {
     position: absolute;
     width: 100%;
@@ -1743,10 +1810,12 @@ ul.GameJpBox li .Jpt span {
     font-size: 14px;
     transition: all ease .1s;
 }
+
 .GameJpt span {
     font-size: 20px;
     margin-right: 5px;
 }
+
 .GameJumpBox {
     position: absolute;
     width: 90%;
@@ -1849,16 +1918,20 @@ a .GameJumpBox.Free {
     opacity: 0;
     transition: all .3s;
 }
+
 .prev {
     left: -32px;
 }
+
 .next {
     background-image: url("images/next.png");
     right: -32px;
 }
+
 .GameAll:hover .prev, .GameAll:hover .next {
     opacity: 1;
 }
+
 
 /*優惠活動*/
 
@@ -1867,13 +1940,16 @@ a .GameJumpBox.Free {
     height: auto;
     margin: 0 auto 50px;
 }
+
 .OfferMain .TitleBox {
-    padding:0;
+    padding: 0;
     margin: 15px 0;
 }
-.OfferMain .TitleBox h2,.OfferMain .TitleBox p{
+
+.OfferMain .TitleBox h2, .OfferMain .TitleBox p {
     line-height: 40px;
 }
+
 .OfferBox2 {
     position: relative;
     width: 238px;
@@ -1951,13 +2027,16 @@ a .GameJumpBox.Free {
 
 
 /*註冊頁面*/
+
 .RegisterSuccess {
     margin-bottom: 20px;
 }
+
 .RegisterSuccess ul li {
     overflow: hidden;
     padding: 15px 0;
 }
+
 .RegisterSuccess ul li i {
     display: inline-block;
     width: 70px;
@@ -1971,28 +2050,34 @@ a .GameJumpBox.Free {
     border: 1px solid #dddddd;
     float: left;
     margin-right: 15px;
-    background-position:center 10px;
+    background-position: center 10px;
     background-repeat: no-repeat;
 }
+
 .RegisterSuccess ul li i.Rs1 {
     background-image: url("images/rs1.png");
 }
+
 .RegisterSuccess ul li i.Rs2 {
     background-image: url("images/rs2.png");
 }
+
 .RegisterSuccess ul li i.Rs3 {
     background-image: url("images/rs3.png");
 }
+
 .RegisterSuccess ul li.Line {
     width: 100%;
     height: 1px;
-    background-color:#e8e8e8;
+    background-color: #e8e8e8;
     padding: 0;
 }
+
 .RegisterSuccess ul li .Article {
     display: inline-block;
     float: left;
 }
+
 .RegisterSuccess ul li .Btn {
     width: 80px;
     height: 30px;
@@ -2000,6 +2085,7 @@ a .GameJumpBox.Free {
     line-height: 30px;
     float: left;
 }
+
 .RegisterSuccess ul li .Degital {
     float: right;
     color: #FFA800;
@@ -2007,6 +2093,7 @@ a .GameJumpBox.Free {
     text-align: right;
     margin: 0;
 }
+
 .RegisterBanner {
     position: relative;
     width: 100%;
@@ -2111,10 +2198,12 @@ a .GameJumpBox.Free {
     border: 1px solid #FFA800;
     box-shadow: 0 0 5px rgba(255, 162, 0, 50);
 }
+
 .lRMain .InputBox.Warnings {
     border: 1px solid #FF6050;
     box-shadow: 0 0 5px rgba(255, 96, 80, 50);
 }
+
 .lRMain .Prompt {
     font-size: 10px;
     color: #CFCFCF;
@@ -2241,7 +2330,7 @@ a .GameJumpBox.Free {
     width: 16px;
     height: 16px;
     background-image: url("images/icon008.png");
-    margin:0 5px;
+    margin: 0 5px;
 }
 
 .RightText {
@@ -2509,6 +2598,8 @@ a .GameJumpBox.Free {
 .MemberNav ul li:hover a {
     color: #fff;
 }
+
+
 /*
 .MemberNav ul li.OmoveBg {
     position: relative;
@@ -2585,7 +2676,6 @@ a .GameJumpBox.Free {
     animation: Move1 1s linear infinite;
 }
 
-
 .MemberNav ul li a {
     display: block;
     height: 100%;
@@ -2655,6 +2745,7 @@ a .GameJumpBox.Free {
     font-size: 14px;
     line-height: 50px;
 }
+
 .MemberLeftNav ul li a {
     display: block;
     width: 100%;
@@ -2709,6 +2800,7 @@ a .GameJumpBox.Free {
     margin-top: 18.5px;
     margin-right: 20px;
 }
+
 .MemberLeftNav ul li .RedPrompt {
     width: 5px;
     height: 5px;
@@ -2722,6 +2814,7 @@ a .GameJumpBox.Free {
     margin-right: inherit;
     vertical-align: middle;
 }
+
 .MemberLeftNav ul li.Active a {
     color: #3eace9;
 }
@@ -3107,13 +3200,15 @@ a .GameJumpBox.Free {
     color: #333333;
     cursor: pointer;
 }
-.AddBank  span {
+
+.AddBank span {
     vertical-align: middle;
 }
 
 .AddBank:hover {
     color: #3eace9;
 }
+
 .AddBank i {
     display: inline-block;
     vertical-align: middle;
@@ -3158,9 +3253,11 @@ a .GameJumpBox.Free {
     top: 8px;
     left: -12px;
 }
+
 .MemberPrompt a, .MemberPrompt span {
     color: #ff0000;
 }
+
 .MemberSendBtn {
     min-width: 115px;
     height: 38px;
@@ -3173,6 +3270,7 @@ a .GameJumpBox.Free {
     margin-bottom: 10px;
     margin-left: 10px;
 }
+
 .MemberSendBtn a {
     display: block;
     color: #666666;
@@ -3181,15 +3279,15 @@ a .GameJumpBox.Free {
 }
 
 .MemberSendBtn a:hover {
-   background-image: none;
-   background-color: #F3F3F3;
+    background-image: none;
+    background-color: #F3F3F3;
 }
 
 .MemberSendBtn.Active a:hover {
-   background-image: url(../styles/images/bg005.png);
-   background-color: inherit;
-
+    background-image: url(../styles/images/bg005.png);
+    background-color: inherit;
 }
+
 .MemberBtn {
     width: 175px;
     height: 35px;
@@ -3201,15 +3299,18 @@ a .GameJumpBox.Free {
     margin-bottom: 10px;
     margin-right: 10px;
 }
+
 .MemberBtn a {
     display: block;
     color: #fff;
     text-decoration: none;
     background-color: #c7c7c7;
 }
+
 .MemberBtn.Active a {
     background-color: #3eace9;
 }
+
 .MemberBtn.Active a:hover {
     background-color: #46bdff;
 }
@@ -3326,8 +3427,7 @@ a .GameJumpBox.Free {
     text-align: center;
     background-color: #ffae00;
     margin-bottom: 20px;
-     margin-top: -1px;
-
+    margin-top: -1px;
 }
 
 .TimesReciprocal span {
@@ -3375,12 +3475,14 @@ a .GameJumpBox.Free {
 .MemberWarning p {
     color: #333333;
 }
+
 .MemberRightMain .MemberWarning p span {
-  color: #333333;
-  vertical-align: middle;
+    color: #333333;
+    vertical-align: middle;
 }
-.MemberRightContent .MemberWarning p span{
-  vertical-align: middle;
+
+.MemberRightContent .MemberWarning p span {
+    vertical-align: middle;
 }
 
 .MemberWarning i {
@@ -3672,6 +3774,7 @@ p.LoginTimes i {
     color: #333333;
     text-indent: 50px;
 }
+
 .HelpCenterSearchOption {
     display: none;
     position: absolute;
@@ -3683,25 +3786,31 @@ p.LoginTimes i {
     box-shadow: 0 0 5px rgba(0, 0, 0, .3);
     overflow: hidden;
 }
+
 .HelpCenterSearchOption ul li {
     font-size: 14px;
     line-height: 22px;
 }
+
 .HelpCenterSearchOption ul li:hover {
     background-color: #ffebd3;
 }
+
 .HelpCenterSearchOption ul li a {
     display: block;
     padding: 5px 20px;
     color: #666666;
     text-decoration: none;
 }
+
 .HelpCenterSearchOption ul li a span {
     color: #FF9F00;
 }
+
 .HelpCenterBar .HelpCenterSearchOption {
     top: 55px;
 }
+
 .HelpCenterMain {
     width: 1000px;
     height: auto;
@@ -4049,19 +4158,23 @@ ul.HelpCenterArticleColumn li {
 .PlayGameFooter .SelectBox {
     margin-left: 20px;
 }
+
 .PlayGameFooter .SelectBox label {
     height: 35px;
     line-height: 35px;
 }
+
 .PlayGameFooter .SelectMain {
     padding-right: 25px;
 }
+
 .PlayGameFooter .Select {
     width: inherit;
     min-width: 100px;
     height: 33px;
     line-height: 33px;
 }
+
 .PlayGameFooter .Option {
     top: inherit;
     bottom: 33px;
@@ -4077,6 +4190,7 @@ ul.HelpCenterArticleColumn li {
     font-size: 14px;
     margin-left: 10px;
 }
+
 .PlayGameFooter .Btn a {
     opacity: .5;
 }
@@ -4089,6 +4203,7 @@ ul.HelpCenterArticleColumn li {
     margin-left: inherit;
     margin-right: 20px;
 }
+
 .PlayGameBar {
     position: absolute;
     width: 100%;
@@ -4098,6 +4213,7 @@ ul.HelpCenterArticleColumn li {
     bottom: 0;
     z-index: 2;
 }
+
 .PlayGameBar h2 {
     font-size: 14px;
     line-height: 50px;
@@ -4105,11 +4221,13 @@ ul.HelpCenterArticleColumn li {
     float: left;
     margin-left: 20px;
 }
+
 ul.PlayGameRecent {
     float: left;
     margin-top: -20px;
     margin-left: 10px;
 }
+
 ul.PlayGameRecent li {
     position: relative;
     width: 80px;
@@ -4121,13 +4239,16 @@ ul.PlayGameRecent li {
     box-shadow: 0 0 5px rgba(0, 0, 0, .3);
     transition: all ease-out .3s;
 }
+
 ul.PlayGameRecent li:hover {
     margin: -10px 5px 0;
 }
+
 ul.PlayGameRecent li img {
     width: 100%;
     margin: 0;
 }
+
 .PlayGameTime {
     font-size: 14px;
     line-height: 50px;
@@ -4135,6 +4256,7 @@ ul.PlayGameRecent li img {
     float: right;
     margin-right: 10px;
 }
+
 .PlayGameSwitch {
     width: 20px;
     height: 20px;
@@ -4146,9 +4268,11 @@ ul.PlayGameRecent li img {
     margin-right: 20px;
     cursor: pointer;
 }
+
 .PlayGameSwitch.Active {
     background-position: bottom;
 }
+
 
 /*錯誤訊息頁面*/
 
@@ -4290,38 +4414,40 @@ ul.PlayGameRecent li img {
     background-color: #dddddd;
     margin: 0 48px;
 }
-.spinner {
-  margin: 20px auto 50px;
-  width: 40px;
-  height: 40px;
-  position: relative;
-  text-align: center;
 
-  -webkit-animation: sk-rotate 2.0s infinite linear;
-  animation: sk-rotate 2.0s infinite linear;
+.spinner {
+    margin: 20px auto 50px;
+    width: 40px;
+    height: 40px;
+    position: relative;
+    text-align: center;
+    -webkit-animation: sk-rotate 2.0s infinite linear;
+    animation: sk-rotate 2.0s infinite linear;
 }
+
 .GamesBox .spinner {
     margin: 70px auto;
 }
-.dot1, .dot2 {
-  width: 60%;
-  height: 60%;
-  display: inline-block;
-  position: absolute;
-  top: 0;
-  background-color: #FF9E00;
-  border-radius: 100%;
 
-  -webkit-animation: sk-bounce 2.0s infinite ease-in-out;
-  animation: sk-bounce 2.0s infinite ease-in-out;
+.dot1, .dot2 {
+    width: 60%;
+    height: 60%;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    background-color: #FF9E00;
+    border-radius: 100%;
+    -webkit-animation: sk-bounce 2.0s infinite ease-in-out;
+    animation: sk-bounce 2.0s infinite ease-in-out;
 }
 
 .dot2 {
-  top: auto;
-  bottom: 0;
-  -webkit-animation-delay: -1.0s;
-  animation-delay: -1.0s;
+    top: auto;
+    bottom: 0;
+    -webkit-animation-delay: -1.0s;
+    animation-delay: -1.0s;
 }
+
 .BtnStyle1 .spinner {
     position: absolute;
     width: 30px;
@@ -4331,45 +4457,63 @@ ul.PlayGameRecent li img {
     margin-top: -15px;
     margin-left: -15px;
 }
-.BtnStyle1 .dot1,.BtnStyle1 .dot2 {
-     background-color: #fff;
+
+.BtnStyle1 .dot1, .BtnStyle1 .dot2 {
+    background-color: #fff;
 }
 
-@-webkit-keyframes sk-rotate { 100% { -webkit-transform: rotate(360deg) }}
-@keyframes sk-rotate { 100% { transform: rotate(360deg); -webkit-transform: rotate(360deg) }}
+@-webkit-keyframes sk-rotate {
+    100% {
+        -webkit-transform: rotate(360deg)
+    }
+}
+
+@keyframes sk-rotate {
+    100% {
+        transform: rotate(360deg);
+        -webkit-transform: rotate(360deg)
+    }
+}
 
 @-webkit-keyframes sk-bounce {
-  0%, 100% { -webkit-transform: scale(0.0) }
-  50% { -webkit-transform: scale(1.0) }
+    0%, 100% {
+        -webkit-transform: scale(0.0)
+    }
+    50% {
+        -webkit-transform: scale(1.0)
+    }
 }
 
 @keyframes sk-bounce {
-  0%, 100% {
-    transform: scale(0.0);
-    -webkit-transform: scale(0.0);
-  } 50% {
-    transform: scale(1.0);
-    -webkit-transform: scale(1.0);
-  }
+    0%, 100% {
+        transform: scale(0.0);
+        -webkit-transform: scale(0.0);
+    }
+    50% {
+        transform: scale(1.0);
+        -webkit-transform: scale(1.0);
+    }
 }
+
 .Loading {
     position: absolute;
-    width:104px;
+    width: 104px;
     height: 104px;
     border-radius: 104px;
-
     background-image: url("images/loading.gif");
     background-position: center;
-    box-shadow: 0 30px 70px rgba(0,0,0,.6);
+    box-shadow: 0 30px 70px rgba(0, 0, 0, .6);
     left: 50%;
     top: 50%;
     margin-left: -52px;
     margin-top: -52px;
     z-index: 2;
 }
+
 .Layout.PaddingTop {
     padding-top: 68px;
 }
+
 @media (max-width: 1440px) {
     .Layout.PaddingTop {
         padding-top: 58px;
@@ -4427,8 +4571,8 @@ ul.PlayGameRecent li img {
         width: 440px;
     }
     .SearchOption {
-     width: 510px;
-}
+        width: 510px;
+    }
     .Post {
         width: 480px;
     }
@@ -4442,9 +4586,6 @@ ul.PlayGameRecent li img {
         transform: rotate(360deg);
     }
 }
-
-
-/*showma*/
 
 
 /*頁碼*/
@@ -4758,11 +4899,39 @@ ul.PlayGameRecent li img {
     background: #f4f5fa;
 }
 
+.TransactionBg.Wp0 {
+    padding: 0;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+
+/*代理人pop2 交易紀錄-*/
+
+.pop2 {
+    padding: 0;
+    border-radius: 5px;
+}
+
 .TransactionMain {
     width: 990px;
     height: 186px;
     margin: 0 auto;
 }
+
+
+.Moneyoverage {
+    text-align: right;
+    color: #666666;
+    font-size: 12px;
+}
+
+.Moneyoverage span {
+    color: #ff6600;
+    padding: 0 5px;
+}
+
+
 
 
 /*timed*/
@@ -5225,8 +5394,23 @@ p.Suggest i {
     z-index: 2;
 }
 
-.w1000{
+
+/*代理人pop1 合約定位捲軸出線*/
+
+.LightBoxMainTranscation.pop1pa {
+    position: absolute;
+}
+
+
+/*代理人pop2-交易紀錄*/
+
+.w1000 {
     width: 1000px;
+    position: 0;
+}
+
+.w100pt {
+    width: 100%;
 }
 
 
@@ -5846,7 +6030,7 @@ p.Suggest i {
     text-decoration: underline;
 }
 
-.ShareplanMore a{
+.ShareplanMore a {
     color: #3eace9;
     text-decoration: underline;
 }
@@ -6046,6 +6230,9 @@ p.Suggest i {
     text-align: right;
 }
 
+
+/*渠道存款分析*/
+
 .PlanMain-all4 .advchannel {
     width: 49.9%;
     display: inline-block;
@@ -6100,11 +6287,92 @@ p.Suggest i {
 }
 
 
+/*成為高級代理人*/
+
+.PlanMain-all4 .hp {
+    width: 49%;
+    display: inline-block;
+}
+
+.PlanMain-all4 .hp .hpMain {
+    padding: 20px;
+}
+
+.PlanMain-all4 .hp .hpMain .hpBox {
+    padding: 40px 0 52px 0;
+    text-align: center;
+}
+
+.PlanMain-all4 .hp .hpMain .hpBox .pi {
+    width: 32.5%;
+    display: inline-block;
+}
+
+.PlanMain-all4 .hp .hpMain .hpBox .pi p {
+    font-size: 12px;
+    text-align: center;
+}
+
+.PlanMain-all4 .hp .hpMain .hpBox .pi .ico1 {
+    width: 60px;
+    height: 60px;
+    background:url('images/shareplan/p1.png') no-repeat #333;
+    margin: 15px auto 5px auto;
+}
+
+.PlanMain-all4 .hp .hpMain .hpBox .pi .ico2 {
+    width: 60px;
+    height: 60px;
+    background:url('images/shareplan/p1.png') no-repeat #333;
+    margin: 15px auto 5px auto;
+}
+
+.PlanMain-all4 .hp .hpMain .hpBox .pi .ico3 {
+    width: 60px;
+    height: 60px;
+    background:url('images/shareplan/p1.png') no-repeat #333;
+    margin: 15px auto 5px auto;
+}
+
+
 /*代理人明細表格樣式*/
 
 .TableStyle4 table {
     width: 100%;
     border: 1px solid #dddddd;
+}
+
+
+/*代理人pop4 邀請好友-*/
+
+.TableStyle4 h3 {
+    line-height: 20px;
+    padding-bottom: 5px;
+}
+
+.TableStyle4 .MemberBtn {
+    width: 60px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    font-size: 14px;
+    border-radius: 3px;
+    margin: 0 0 0 80px;
+}
+
+.TableStyle4 .MemberBtn a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    background-color: #c7c7c7;
+}
+
+.TableStyle4 .MemberBtn.Active a {
+    background-color: #3eace9;
+}
+
+.TableStyle4 .MemberBtn.Active a:hover {
+    background-color: #46bdff;
 }
 
 
@@ -6133,11 +6401,28 @@ p.Suggest i {
 .TableStyle4.TextCenter table tr td {
     text-align: center;
     text-indent: inherit;
+    text-align: left;
 }
 
 .TableStyle4 table tr td p {
     margin-bottom: 0;
+    display: inline-block;
+
 }
+
+.TableStyle4 table tr td i {
+      display: inline-block;
+      vertical-align: middle;
+      width: 20px;
+      height: 20px;
+      border-radius: 20px;
+      background-color: #3eace9;
+      background-image: url(images/icon015.png);
+      background-position: center;
+      background-repeat: no-repeat;
+      margin-left:5px;
+}
+
 
 .TableStyle4 table tr td.Title {
     color: #333333;
@@ -6147,6 +6432,22 @@ p.Suggest i {
     padding-top: 15px;
     padding-bottom: 15px;
 }
+
+/*pop8下线明细連結修改*/
+.TableStyle4.TL table tr td{
+  padding-left:20px;
+  text-align: left;
+  padding-right: 0px;
+
+}
+.TableStyle4.TL td .timed input{
+  margin: 0;
+}
+.TableStyle4.TL td .timed i{
+  background-color: #000;
+  background-image: url(images/icon016.png);
+}
+
 
 .TableStyle4 tr:nth-child(odd) {
     background-color: #fafafa;
@@ -6180,7 +6481,7 @@ p.Suggest i {
     text-align: center;
 }
 
-.TableStyle5.TextCenter table tr td {
+.TableStyle5 .TextCenter table tr td {
     text-align: center;
     text-indent: inherit;
 }
@@ -6202,6 +6503,36 @@ p.Suggest i {
     background-color: #fafafa;
 }
 
+
+/*月結單 傭金比例*/
+
+.TableStyle5 .pftage {
+    position: relative;
+    width: 80%;
+    line-height: 10px;
+    float: left;
+}
+
+.TableStyle5 .pftage .text {
+    width: 60px;
+    color: #fab400;
+    float: left;
+}
+
+.TableStyle5 .pftage .linebox {
+    width: 200px;
+    height: 6px;
+    display: table-cell;
+    vertical-align: middle;
+    background-color: #ddd;
+}
+
+.TableStyle5 .linebox .linebg {
+    width: 60%;
+    height: 6px;
+    background: #ff9e00;
+    vertical-align: middle;
+}
 
 
 /*表格樣式-客戶報表*/
@@ -6254,9 +6585,50 @@ p.Suggest i {
 }
 
 
+/*表格樣式 下線明細-內容*/
 
+.TableStyle7 table {
+    width: 100%;
+    border: 1px solid #dddddd;
+}
 
+.TableStyle7 {
+    width: 100%;
+    height: auto;
+    font-size: 14px;
+    color: #3eace9;
+}
 
+.TableStyle7 table tr td {
+    border-left: 1px solid #dddddd;
+    border-right: 1px solid #dddddd;
+    border-top: 1px dashed #dddddd;
+    border-bottom: 1px dashed #dddddd;
+    padding-left: 2px;
+    padding-right: 2px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    line-height: 22px;
+    text-align: center;
+}
+
+.TableStyle7.TextCenter table tr td {
+    text-align: center;
+    text-indent: inherit;
+}
+
+.TableStyle7 table tr td p {
+    margin-bottom: 0;
+}
+
+.TableStyle7 table tr td.Title {
+    color: #333333;
+    background-color: #f5f5f5;
+}
+
+.TableStyle7 tr:nth-child(odd) {
+    background-color: #fafafa;
+}
 
 
 /*代理人管理頁面明細*/
@@ -6286,34 +6658,32 @@ p.Suggest i {
     height: 90px;
 }
 
- .totalamount p{
-font-size: 13px;
-color: #999;
-line-height: 18px;
- }
+.totalamount p {
+    font-size: 13px;
+    color: #999;
+    line-height: 18px;
+}
 
- .totalamount .txt{
+.totalamount .txt {}
 
- }
+.totalamount i {
+    display: inline-block;
+    vertical-align: middle;
+    width: 15px;
+    height: 16px;
+    background: url("images/shareplan/moneyicon.png") no-repeat;
+    margin: 0 5px;
+}
 
-.totalamount i{
-  display: inline-block;
-  vertical-align: middle;
-  width: 15px;
-  height: 16px;
-  background: url("images/shareplan/moneyicon.png") no-repeat;
-  margin: 0 5px;
-  }
-
-  .totalamount h1{
+.totalamount h1 {
     font-size: 40px;
     color: #ffae00;
     float: left;
     padding-right: 30px;
     line-height: 45px;
-  }
+}
 
-  .totalamount .MemberBtn {
+.totalamount .MemberBtn {
     width: 90px;
     height: 36px;
     text-align: center;
@@ -6324,61 +6694,55 @@ line-height: 18px;
     margin-bottom: 10px;
     margin-right: 10px;
     margin-top: 4px;
-  }
-
-.totalamount .dontMemberBtn{
-  width: 90px;
-  height: 40px;
-  text-align: center;
-  line-height:40px;
-  font-size: 14px;
-  color: #666;
 }
 
-.totalamount .dontMemberBtn a{
+.totalamount .dontMemberBtn {
+    width: 90px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 14px;
+    color: #666;
+}
+
+.totalamount .dontMemberBtn a {
     color: #666;
     text-decoration: none;
 }
 
-
 .totalamount .MemberBtn.Active a {
-      background-color: #3eace9;
-  }
+    background-color: #3eace9;
+}
 
 .totalamount .MemberBtn.Active a:hover {
-      background-color: #46bdff;
-  }
-
+    background-color: #46bdff;
+}
 
 .wealthlist_lef .padd .mbox {
     padding-top: 30px;
 }
 
-.wealthlist_lef .padd .mbox p{
-  color: #999999;
-  font-size: 12px;
-  line-height: 24px;
-
+.wealthlist_lef .padd .mbox p {
+    color: #999999;
+    font-size: 12px;
+    line-height: 24px;
 }
 
-
-.wealthlist_lef .padd .mbox h1{
-  color:#00aaee;
-  font-size: 30px;
-
+.wealthlist_lef .padd .mbox h1 {
+    color: #00aaee;
+    font-size: 30px;
 }
 
-.wealthlist_lef .padd .mbox span{
-  color:#00aaee;
-  font-size: 12px;
-  padding-left: 15px;
-  text-decoration: underline;
+.wealthlist_lef .padd .mbox span {
+    color: #00aaee;
+    font-size: 12px;
+    padding-left: 15px;
+    text-decoration: underline;
 }
 
-.wealthlist_lef .padd .mbox span a{
-  color:#46bdff;
+.wealthlist_lef .padd .mbox span a {
+    color: #46bdff;
 }
-
 
 .wealthlist_lef .padd .income {
     float: left;
@@ -6402,7 +6766,9 @@ line-height: 18px;
     padding: 0 25px;
 }
 
+
 /*右側*/
+
 .wealthlist_rig {
     width: 40%;
     float: right;
@@ -6411,20 +6777,17 @@ line-height: 18px;
     height: 265px;
 }
 
-.wealthlist_rig p{
-  font-size: 12px;
-  color: #999999;
-  line-height: 24px;
-
+.wealthlist_rig p {
+    font-size: 12px;
+    color: #999999;
+    line-height: 24px;
 }
 
-.wealthlist_rig h1{
-  font-size: 24px;
-  color: #666666;
-  line-height: 30px;
-
+.wealthlist_rig h1 {
+    font-size: 24px;
+    color: #666666;
+    line-height: 30px;
 }
-
 
 .wealthlist_rig .padd {
     padding: 30px 20px;
@@ -6470,11 +6833,10 @@ line-height: 18px;
 }
 
 .wealthTab .navbox ul, li {
-	margin: 0;
-	padding: 0;
-	list-style: none;
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
-
 
 .wealthTab .navbox ul.tab-item {
     width: 100%;
@@ -6493,60 +6855,241 @@ ul.tab-item li {
     color: #0088cc;
     line-height: 50px;
     text-align: center;
-
 }
 
 ul.tab-item li.Active {
     background-color: #fff;
     color: #666666;
-    border-bottom:1px solid #fff;
+    border-bottom: 1px solid #fff;
 }
 
-.wealthTab .tab_container{
-  width: 100%;
-  border: 1px solid #ddd;
-	background: #fff;
-
+.wealthTab .tab_container {
+    width: 100%;
+    border: 1px solid #ddd;
+    background: #fff;
 }
+
 .wealthTab .tab_container .tab_content {
-  padding: 20px;
-
+    padding: 20px;
 }
+
+
 /*分享計畫-日曆*/
-.wealthTab .tab_container .calenderMain{
-    border-bottom:1px dashed #d4d4d4;
+
+.wealthTab .tab_container .calenderMain {
+    border-bottom: 1px dashed #d4d4d4;
     height: 50px;
     padding: 20px 20px 0 15px;
 }
 
-.tab_container .calenderMain .timebox{
-  float: left;
-  padding-right: 5px;
+.tab_container .calenderMain .timebox {
+    float: left;
+    padding-right: 5px;
 }
 
-.tab_container .calenderMain .selbox{
-  float: left;
+.tab_container .calenderMain .selbox {
+    float: left;
 }
 
-.tab_container .calenderMain .selbox .Select{
-      width: 110px;
-      height: 33px;
-      line-height: 33px;
+.tab_container .calenderMain .selbox .Select {
+    width: 110px;
+    height: 33px;
+    line-height: 33px;
 }
 
-.tab_container .calenderMain .MemberBtn{
-  width: 50px;
-  height: 35px;
+.tab_container .calenderMain .selbox .SelectBox .Select .Option {
+    /* display: none; */
+    position: absolute;
+    width: 100%;
+    max-height: 150px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    border: 1px solid #dddddd;
+    background-color: #FFF;
+    top: 32px;
+    left: -1px;
+    z-index: 1;
 }
 
-.tab_container .calenderMain .selbox .Select .SelectMain .Option{
-  position: absolute;
-  width: 100%;
-  max-height: 150px;
-  overflow-y: scroll;
-  overflow-x: hidden;
-  border: none;
-  top: 35px;
-  left: inherit;
-  z-index: 2;
+.tab_container .calenderMain .MemberBtn {
+    width: 50px;
+    height: 35px;
+}
+
+
+/*代理人-渠道設定pop8*/
+
+.linkpp1 {
+    display: inline-block;
+}
+
+.linkurl {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.linkurl .MemberBtn {
+    margin: 0;
+}
+
+
+/*代理人-合約*/
+
+.contractbg {
+    width: 100%;
+}
+
+.contractbg .contractMain {
+    padding: 10px;
+}
+
+.contractbg .contractMain .item {
+    padding-bottom: 5px;
+}
+
+.contractbg .contractMain .item h3 {
+    font-size: 14px;
+    color: #00aaee;
+    line-height: 24px;
+}
+
+.contractbg .contractMain .item h4 {
+    font-size: 12px;
+    color: #666;
+    line-height: 24px;
+}
+
+.contractbg .contractMain .item ul li {
+    padding: 0;
+}
+
+.contractbg .contractMain .item li {
+    list-style-type: decimal;
+    margin-left: 1.5em;
+    font-size: 12px;
+    color: #666;
+    line-height: 24px;
+}
+
+
+/*代理人-優勢*/
+
+.Atgebox {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.Atgebox .Main {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.Atgebox .Main h1 {
+    text-align: center;
+    font-size: 18px;
+    color: #333333;
+}
+
+.Atgebox .Main p {
+    text-align: center;
+    font-size: 14px;
+    color: #666666;
+    line-height: 22px;
+}
+
+.Atgebox .Main span {
+    color: #3eace9;
+    text-decoration: underline;
+}
+
+.Atgebox .Main .icon1, .icon2, .icon3 {
+    width: 350px;
+    height: 350px;
+    margin: 15px auto;
+    background-color: #999;
+}
+
+.Atgebox .Main .MemberBtnMain {
+    padding-top: 30px;
+}
+
+.Atgebox .MemberBtn {
+    display: inline-block;
+    width: 150px;
+    height: 35px;
+    text-align: center;
+    line-height: 35px;
+    font-size: 14px;
+    border-radius: 3px;
+}
+
+.Atgebo .MemberBtn a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    background-color: #c7c7c7;
+}
+
+.Atgebox .Main .MemberBtn.Active a {
+    background-color: #3eace9;
+}
+
+.Atgebox .Main .MemberBtn.Active a:hover {
+    background-color: #46bdff;
+}
+
+
+/*高級代理人優勢-合約*/
+
+.Atgebox .Main .contract {
+    width:800px;
+    height: 500px;
+    overflow-y: auto;
+    margin: 10px auto;
+    border: 1px solid #ddd;
+}
+
+.Atgebox .Main .numberBox{
+  margin-top: 30px;
+    width:800px;
+      overflow: auto;
+}
+
+.Atgebox .Main .numberBox .nmf{
+  width:50%;
+  margin: 0 auto;
+}
+
+.Atgebox .numberBox .MemberBtnMain {
+    clear: both;
+}
+
+.Atgebox .numberBox .MemberBtnMain .MemberBtn {
+    width: 150px;
+    height: 35px;
+    text-align: center;
+    line-height: 35px;
+    font-size: 14px;
+    border-radius: 3px;
+    margin: 0 auto;
+    display: block;
+    margin-top: 10px;
+}
+
+.Atgebox .methodbox{
+width: 50%;
+margin: 40px auto 10px auto;
+}
+
+
+.Atgebox .MemberBtnMain .Prompt{
+  font-size: 12px;
+    color: #CFCFCF;
+    text-align: center;
+}
+
+.Atgebox .MemberBtnMain .Prompt a{
+  font-size: 12px;
+    color: #999999;
+    text-align: center;
 }
