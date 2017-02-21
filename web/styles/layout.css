@@ -12,7 +12,7 @@ body {
     min-width: 1040px;
 }
 body.ShowAll {
-    display: block;
+    display: block !important;
 }
 
 /*共用樣式*/
