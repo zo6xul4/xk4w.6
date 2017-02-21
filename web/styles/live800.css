@@ -12,6 +12,9 @@ body {
     min-width: inherit;
     background-color: #f5f5f5;
 }
+body.ShowAll {
+    display: block;
+}
 .ClearBoth {
     clear: both;
 }

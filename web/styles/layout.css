@@ -11,7 +11,9 @@ html, body {
 body {
     min-width: 1040px;
 }
-
+body.ShowAll {
+    display: block;
+}
 
 /*共用樣式*/
 
