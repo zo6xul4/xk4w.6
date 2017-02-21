@@ -10,6 +10,7 @@ html, body {
 }
 body {
     min-width: inherit;
+    background-color: #f5f5f5;
 }
 .ClearBoth {
     clear: both;
