@@ -556,7 +556,25 @@ ol.flex-control-nav li a.flex-active {
     color: #fff;
     text-decoration: none;
 }
-
+.SlidesArticle {
+    position: absolute;
+    left: 50%;
+    margin-left: -500px;
+    color: #fff;
+    text-shadow: 0 1px 3px rgba(0,0,0,.9);
+    top: 20px;
+}
+.SlidesArticle h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+.SlidesArticle h2 span {
+    font-size: 20px;
+    margin: 0 5px;
+}
+.SlidesArticle h3 {
+    font-size: 20px;
+}
 
 /*搜尋區塊*/
 
@@ -4921,19 +4939,17 @@ ul.PlayGameRecent li img {
     margin: 0 auto;
 }
 
-
 .Moneyoverage {
     text-align: right;
     color: #666666;
     font-size: 12px;
+    margin-right: 10px;
 }
 
 .Moneyoverage span {
     color: #ff6600;
     padding: 0 5px;
 }
-
-
 
 
 /*timed*/
@@ -5391,7 +5407,7 @@ p.Suggest i {
     background-color: #fff;
     border-radius: 5px;
     left: 50%;
-    margin-left: -500px;
+    margin-left: -480px;
     top: 50px;
     z-index: 2;
 }
@@ -5403,12 +5419,24 @@ p.Suggest i {
     position: absolute;
 }
 
+.LightBoxMainTranscation .TransLlstMain {
+    width: 900px;
+}
+
+.LightBoxMainTranscation .TransactionMain {
+    width: 900px;
+}
+
+.LightBoxMainTranscation .TransactionMain .MemberTitle p {
+    margin-left: 10px;
+}
+
 
 /*代理人pop2-交易紀錄*/
 
-.w1000 {
+.LightBoxMainTranscation .w1000 {
     width: 1000px;
-    position: 0;
+    margin-left: -560px;
 }
 
 .w100pt {
@@ -5420,7 +5448,7 @@ p.Suggest i {
 
 .TableStyle3 table {
     width: 100%;
-    border: 1px solid #dddddd;
+    border: 1px solid #dddddd
 }
 
 .TableStyle3 {
@@ -6318,21 +6346,21 @@ p.Suggest i {
 .PlanMain-all4 .hp .hpMain .hpBox .pi .ico1 {
     width: 60px;
     height: 60px;
-    background:url('images/shareplan/p1.png') no-repeat #333;
+    background: url('images/shareplan/p1.png') no-repeat #333;
     margin: 15px auto 5px auto;
 }
 
 .PlanMain-all4 .hp .hpMain .hpBox .pi .ico2 {
     width: 60px;
     height: 60px;
-    background:url('images/shareplan/p1.png') no-repeat #333;
+    background: url('images/shareplan/p1.png') no-repeat #333;
     margin: 15px auto 5px auto;
 }
 
 .PlanMain-all4 .hp .hpMain .hpBox .pi .ico3 {
     width: 60px;
     height: 60px;
-    background:url('images/shareplan/p1.png') no-repeat #333;
+    background: url('images/shareplan/p1.png') no-repeat #333;
     margin: 15px auto 5px auto;
 }
 
@@ -6409,22 +6437,20 @@ p.Suggest i {
 .TableStyle4 table tr td p {
     margin-bottom: 0;
     display: inline-block;
-
 }
 
 .TableStyle4 table tr td i {
-      display: inline-block;
-      vertical-align: middle;
-      width: 20px;
-      height: 20px;
-      border-radius: 20px;
-      background-color: #3eace9;
-      background-image: url(images/icon015.png);
-      background-position: center;
-      background-repeat: no-repeat;
-      margin-left:5px;
+    display: inline-block;
+    vertical-align: middle;
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    background-color: #3eace9;
+    background-image: url(images/icon015.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-left: 5px;
 }
-
 
 .TableStyle4 table tr td.Title {
     color: #333333;
@@ -6435,21 +6461,23 @@ p.Suggest i {
     padding-bottom: 15px;
 }
 
+
 /*pop8下线明细連結修改*/
-.TableStyle4.TL table tr td{
-  padding-left:20px;
-  text-align: left;
-  padding-right: 0px;
 
-}
-.TableStyle4.TL td .timed input{
-  margin: 0;
-}
-.TableStyle4.TL td .timed i{
-  background-color: #000;
-  background-image: url(images/icon016.png);
+.TableStyle4.TL table tr td {
+    padding-left: 20px;
+    text-align: left;
+    padding-right: 0px;
 }
 
+.TableStyle4.TL td .timed input {
+    margin: 0;
+}
+
+.TableStyle4.TL td .timed i {
+    background-color: #000;
+    background-image: url(images/icon016.png);
+}
 
 .TableStyle4 tr:nth-child(odd) {
     background-color: #fafafa;
@@ -6479,8 +6507,9 @@ p.Suggest i {
     padding-right: 24px;
     padding-top: 7px;
     padding-bottom: 7px;
-    line-height: 22px;
+    line-height: 24px;
     text-align: center;
+    vertical-align: middle;
 }
 
 .TableStyle5 .TextCenter table tr td {
@@ -6506,34 +6535,32 @@ p.Suggest i {
 }
 
 
+
 /*月結單 傭金比例*/
 
-.TableStyle5 .pftage {
-    position: relative;
-    width: 80%;
-    line-height: 10px;
+.TableStyle5 .apftage {
+    background-color: ;
+}
+
+.TableStyle5 .apftage .atext {
+    color: #fff;
+    line-height:24px;
+    margin-left: 10px;
     float: left;
+    font-size: 14px;
+
 }
 
-.TableStyle5 .pftage .text {
-    width: 60px;
-    color: #fab400;
-    float: left;
+.TableStyle5 .apftage .alinebox {
+    height: 24px;
+    background-color:#e9e6e6;
+    border-radius: 3px;
 }
 
-.TableStyle5 .pftage .linebox {
-    width: 200px;
-    height: 6px;
-    display: table-cell;
-    vertical-align: middle;
-    background-color: #ddd;
-}
-
-.TableStyle5 .linebox .linebg {
-    width: 60%;
-    height: 6px;
+.alinebg {
     background: #ff9e00;
-    vertical-align: middle;
+    height: 24px;
+    border-radius:3px;
 }
 
 
@@ -7044,22 +7071,22 @@ ul.tab-item li.Active {
 /*高級代理人優勢-合約*/
 
 .Atgebox .Main .contract {
-    width:800px;
+    width: 800px;
     height: 500px;
     overflow-y: auto;
     margin: 10px auto;
     border: 1px solid #ddd;
 }
 
-.Atgebox .Main .numberBox{
-  margin-top: 30px;
-    width:800px;
-      overflow: auto;
+.Atgebox .Main .numberBox {
+    margin-top: 30px;
+    width: 800px;
+    overflow: auto;
 }
 
-.Atgebox .Main .numberBox .nmf{
-  width:50%;
-  margin: 0 auto;
+.Atgebox .Main .numberBox .nmf {
+    width: 50%;
+    margin: 0 auto;
 }
 
 .Atgebox .numberBox .MemberBtnMain {
@@ -7078,20 +7105,19 @@ ul.tab-item li.Active {
     margin-top: 10px;
 }
 
-.Atgebox .methodbox{
-width: 50%;
-margin: 40px auto 10px auto;
+.Atgebox .methodbox {
+    width: 50%;
+    margin: 40px auto 10px auto;
 }
 
-
-.Atgebox .MemberBtnMain .Prompt{
-  font-size: 12px;
+.Atgebox .MemberBtnMain .Prompt {
+    font-size: 12px;
     color: #CFCFCF;
     text-align: center;
 }
 
-.Atgebox .MemberBtnMain .Prompt a{
-  font-size: 12px;
+.Atgebox .MemberBtnMain .Prompt a {
+    font-size: 12px;
     color: #999999;
     text-align: center;
 }
