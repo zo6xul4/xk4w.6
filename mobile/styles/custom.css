@@ -2619,11 +2619,14 @@ input[type="date"] {
   color: #3A3A3A;
   margin-left: 6px; }
 
+.appdownload-warp-big {
+  padding: 10px 10px 0px 10px; }
+
 .appdownload-warp {
-  padding: 10px 4.5px 0px 10px; }
+  padding: 0px 4.5px 0px 0px; }
 
 .appdownload-warp.right {
-  padding: 10px 10px 0px 4.5px; }
+  padding: 0px 0px 0px 4.5px; }
 
 .appdownload-warp.big {
   padding: 10px 10px 13px 10px; }
@@ -2643,6 +2646,7 @@ input[type="date"] {
 .appbanner-warp {
   width: 100%;
   padding-top: 65%;
+  margin-bottom: 10px;
   background-size: cover;
   border-radius: 3px;
   background-position: bottom;
@@ -6192,6 +6196,31 @@ ul.filter-block li label.label-filter-name span {
     .list-box .time-warp .btn-warp a:nth-child(1) {
       margin-left: 15px; }
 
+@media (max-width: 767px) and (orientation: landscape) {
+  .appdownload-warp-big {
+    padding: 10px 10px 0px 10px; }
+
+  .appdownload-warp.right.no2 {
+    padding: 0px 4.5px 0px 4.5px; }
+
+  .appdownload-warp.no3 {
+    padding: 0px 0px 0px 4.5px; }
+
+  .appdownload-warp.right.no4 {
+    padding: 0px 4.5px 0px 0px; }
+
+  .appdownload-warp.no5 {
+    padding: 0px 4.5px 0px 4.5px; }
+
+  .appdownload-warp.right.no6 {
+    padding: 0px 0px 0px 4.5px; }
+
+  .appbanner-warp {
+    padding-top: 150px;
+    margin-bottom: 10px; }
+
+  .col-xs-6 {
+    width: 33.333333%; } }
 @media only screen and (min-device-width: 320px) and (-webkit-min-device-pixel-ratio: 2) and (device-aspect-ratio: 2 / 3), (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (device-aspect-ratio: 40 / 71) {
   .banner {
     height: 128px; }
@@ -6302,6 +6331,28 @@ ul.filter-block li label.label-filter-name span {
 
   _::-webkit-full-page-media, _:future, :root .toppromotion .btn {
     margin-top: 2.03045685%; } }
+@media only screen and (device-width: 375px) and (device-height: 667px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
+  .appdownload-warp-big {
+    padding: 10px 10px 0px 10px; }
+
+  .appdownload-warp.right.no2 {
+    padding: 0px 4.5px 0px 4.5px; }
+
+  .appdownload-warp.no3 {
+    padding: 0px 0px 0px 4.5px; }
+
+  .appdownload-warp.right.no4 {
+    padding: 0px 4.5px 0px 0px; }
+
+  .appdownload-warp.no5 {
+    padding: 0px 4.5px 0px 4.5px; }
+
+  .appdownload-warp.right.no6 {
+    padding: 0px 0px 0px 4.5px; }
+
+  .appbanner-warp {
+    padding-top: 150px;
+    margin-bottom: 10px; } }
 @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) {
   _::-webkit-full-page-media, _:future, :root .toppromotion .top56 {
     margin-top: 1.52284264%; }
@@ -6310,26 +6361,26 @@ ul.filter-block li label.label-filter-name span {
     margin-top: 2.03045685%;
     padding: 3px 9px 3px; } }
 @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 3) {
-  .appdownload-warp.right {
-    padding: 10px 4.5px 0px 4.5px; }
+  .appdownload-warp-big {
+    padding: 10px 10px 0px 10px; }
 
-  .appdownload-warp.big {
-    padding: 10px 10px 0px 4.5px; }
+  .appdownload-warp.right.no2 {
+    padding: 0px 4.5px 0px 4.5px; }
 
-  .appdownload-warp, .appdownload-warp.right, .appdownload-warp.big {
-    padding-bottom: 15px; }
+  .appdownload-warp.no3 {
+    padding: 0px 0px 0px 4.5px; }
+
+  .appdownload-warp.right.no4 {
+    padding: 0px 4.5px 0px 0px; }
+
+  .appdownload-warp.no5 {
+    padding: 0px 4.5px 0px 4.5px; }
+
+  .appdownload-warp.right.no6 {
+    padding: 0px 0px 0px 4.5px; }
 
   .appbanner-warp {
-    padding-top: 150px; }
-
-  .appbanner-warp.left.big {
-    padding-top: 150px; }
-
-  .appbanner-warp.left {
-    background-position: bottom right; }
-
-  .appbanner-warp.big {
-    background-position: bottom right; } }
+    padding-top: 150px; } }
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
   .banner {
     height: 307px; }
@@ -6337,26 +6388,26 @@ ul.filter-block li label.label-filter-name span {
   .fish-warp {
     padding: 8% 0%; }
 
-  .appdownload-warp.right {
-    padding: 10px 4.5px 0px 4.5px; }
+  .appdownload-warp-big {
+    padding: 10px 10px 0px 10px; }
 
-  .appdownload-warp.big {
-    padding: 10px 10px 0px 4.5px; }
+  .appdownload-warp.right.no2 {
+    padding: 0px 4.5px 0px 4.5px; }
 
-  .appdownload-warp, .appdownload-warp.right, .appdownload-warp.big {
-    padding-bottom: 15px; }
+  .appdownload-warp.no3 {
+    padding: 0px 0px 0px 4.5px; }
+
+  .appdownload-warp.right.no4 {
+    padding: 0px 4.5px 0px 0px; }
+
+  .appdownload-warp.no5 {
+    padding: 0px 4.5px 0px 4.5px; }
+
+  .appdownload-warp.right.no6 {
+    padding: 0px 0px 0px 4.5px; }
 
   .appbanner-warp {
     padding-top: 150px; }
-
-  .appbanner-warp.left.big {
-    padding-top: 150px; }
-
-  .appbanner-warp.left {
-    background-position: bottom right; }
-
-  .appbanner-warp.big {
-    background-position: bottom right; }
 
   .casino-list-warp .word-warp {
     height: 180px; }
@@ -6400,3 +6451,6 @@ ul.filter-block li label.label-filter-name span {
 
   .promotion-list-warp li:nth-child(even) .promotion-warp {
     padding: 9px 10px 9px 5px; } }
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+  .appbanner-warp {
+    padding-top: 200px; } }
