@@ -3205,7 +3205,7 @@ a.recommend-btn {
   height: 52px;
   background-image: url("images/register-slidebtn.png");
   background-size: cover;
-  margin-top: -1px;
+  margin-top: -13px;
   margin-left: -2px;
   z-index: 2; }
 
@@ -3218,13 +3218,13 @@ a.recommend-btn {
   margin-top: 14px; }
 
 .slide-btn-warp.test-slide-right {
-  margin-left: 70%; }
+  left: 100%;
+  margin-left: -50px; }
 
-.slide-bg-warp.blue-bar:before {
-  content: "即将完成验证";
+.slide-bg-warp .blue-bar {
   display: block;
   position: absolute;
-  width: 85%;
+  width: 20%;
   height: 100%;
   background-color: #3EACE9;
   margin-top: -12px;
@@ -3233,26 +3233,19 @@ a.recommend-btn {
   font-size: 1.6rem;
   color: #FFF;
   padding-top: 12px; }
+
+.slide-bg-warp .blue-bar span {
+  display: inline-block;
+  width: 80%;
+  overflow: hidden;
+  white-space: nowrap; }
+
+.slide-bg-warp .blue-bar.slide-ok {
+  width: 100%; }
 
 .slide-btn-warp.test-slide-ok {
-  right: 10px; }
-
-.slide-bg-warp.slide-ok:before {
-  content: "进行验证中";
-  display: block;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-color: #3EACE9;
-  margin-top: -12px;
-  border-radius: 5px;
-  text-align: center;
-  font-size: 1.6rem;
-  color: #FFF;
-  padding-top: 12px; }
-
-.slide-bg-warp.slide-ok.ok:before {
-  content: "完成验证"; }
+  left: 100%;
+  margin-left: -50px; }
 
 .slide-btn-warp .loading-bg {
   width: 26px;
