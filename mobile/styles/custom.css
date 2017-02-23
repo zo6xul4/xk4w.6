@@ -3988,11 +3988,18 @@ _::-webkit-full-page-media, _:future, :root .toppromotion .btn i {
 
 .promotion-word-warp .number span {
   display: inline-block;
-  font-size: 4.5rem;
-  letter-spacing: -1px;
-  margin-top: -4px;
+  font-size: 4.2rem;
+  letter-spacing: -2px;
+  margin-top: -2px;
   margin-left: 10px;
   color: #0AADFF; }
+
+.promotion-word-warp .number span.money {
+  font-size: 4.2rem; }
+
+.promotion-word-warp .number span.bonus {
+  font-size: 6rem;
+  margin-top: -12px; }
 
 .promotion-word-warp .number i {
   display: inline-block;
