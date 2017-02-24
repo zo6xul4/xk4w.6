@@ -3918,7 +3918,7 @@ _::-webkit-full-page-media, _:future, :root .toppromotion .btn i {
   border-radius: 7px;
   padding: 9px 10px; }
 
-.promotion-img {
+.promotion-img-warp {
   position: relative;
   width: 100%;
   height: 193px;
@@ -3928,10 +3928,21 @@ _::-webkit-full-page-media, _:future, :root .toppromotion .btn i {
   background-position: top center;
   background-repeat: no-repeat; }
 
-.promotion-img.comingsoon {
+.promotion-img-2 {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  background-color: #6CB1E4;
+  border-radius: 8px;
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat; }
+
+.promotion-img-warp.comingsoon {
   opacity: 0.1; }
 
-.promotion-img.comingsoon p {
+.promotion-img-warp.comingsoon p {
   position: absolute;
   width: 100%;
   text-align: center;
@@ -3940,41 +3951,42 @@ _::-webkit-full-page-media, _:future, :root .toppromotion .btn i {
   top: 50%;
   margin-top: -4.3rem; }
 
-.promotion-img.img1 {
+.promotion-img-warp.img1 {
   background-image: url("images/promotion/img1.jpg"); }
 
-.promotion-img.img2 {
+.promotion-img-warp.img2 {
   background-image: url("images/promotion/img2.jpg"); }
 
-.promotion-img.img3 {
+.promotion-img-warp.img3 {
   background-image: url("images/promotion/img3.jpg"); }
 
-.promotion-img.img4 {
+.promotion-img-warp.img4 {
   background-image: url("images/promotion/img4.jpg"); }
 
-.promotion-img.img5 {
+.promotion-img-warp.img5 {
   background-image: url("images/promotion/img5.jpg"); }
 
-.promotion-img.img6 {
+.promotion-img-warp.img6 {
   background-image: url("images/promotion/img6.jpg"); }
 
-.promotion-img.img7 {
+.promotion-img-warp.img7 {
   background-image: url("images/promotion/img7.jpg"); }
 
-.promotion-img.img8 {
+.promotion-img-warp.img8 {
   background-image: url("images/promotion/img8.jpg"); }
 
-.promotion-img.img9 {
+.promotion-img-warp.img9 {
   background-image: url("images/promotion/img9.jpg"); }
 
-.promotion-img.img10 {
+.promotion-img-warp.img10 {
   background-image: url("images/promotion/img10.jpg"); }
 
 .promotion-word-warp {
   position: absolute;
   width: 100%;
   height: 77px;
-  bottom: 0; }
+  bottom: 0;
+  z-index: 2; }
 
 .promotion-word-warp .number {
   width: 118px;
@@ -6271,7 +6283,7 @@ ul.filter-block li label.label-filter-name span {
     margin-top: 1px;
     margin-left: 5px; }
 
-  .promotion-img {
+  .promotion-img-warp {
     height: 165px; }
 
   .toppromotion .number-2 {
