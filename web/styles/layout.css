@@ -4392,8 +4392,8 @@ ul.HelpCenterArticleColumn li {
 
 .PlayGameMain {
     position: relative;
-    min-width: 630px;
-    max-width: 900px;
+    /*min-width: 630px;
+    max-width: 900px;*/
     height: calc(100% - 50px);
     overflow: hidden;
     background-color: #f5f5f5;
