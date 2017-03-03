@@ -1417,7 +1417,199 @@ ul.GameJpBox li .Jpt span {
 
 
 /*娛樂場*/
+.PgSmallBanner {
+    width: 100%;
+    height: 200px;
+    background-color: #f5f5f5;
+    background-position: center;
+}
+.PgHall {
+    width: 191px;
+    height: 320px;
+    border:1px solid #F1F1F1;
+    background-color: #FFFDF8;
+    margin-bottom: 10px;
+    float: left;
+}
+.PgHall.Double {
+    width: 392.5px;
+}
+.PgHall.MarginLeft {
+    margin-left: 8.75px;
+}
+.PgHallTitle {
+    width: 100%;
+    height: 27px;
+    font-size: 14px;
+    color: #333333;
+    line-height: 27px;
+    text-align: center;
+    border-top: 3px solid #FF9300;
+    background-color: #fff;
+}
+.PgHallPic {
+    width: 100%;
+    height: 114px;
+    background-color: #f5f5f5;
+}
+.Double .PgHallPic {
+    height: 140px;
+}
+.PgHallArticle  {
+    padding:10px;
+}
+.PgHallArticle p {
+     font-size: 12px;
+     line-height:18px;
+    color: #666666;
+    border-bottom: 1px solid #CDCDCD;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+.PgHallArticle p a {
+    color: #333333;
+    text-decoration: none;
+}
+.PgHallArticle ul {
+    height: 66px;
+    overflow: hidden;
+}
+.PgHallArticle ul li {
+    width: 50%;
+    height: 12px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-size: 12px;
+    float: left;
+    margin-bottom: 10px;
+}
+.Double .PgHallArticle ul {
+    width: 75%;
+    float: left;
+}
+.Double .PgHallArticle ul li {
+    width: 33.3333%;
+}
+.PgHallArticle ul li i {
+    display: inline-block;
+    vertical-align: middle;
+    width: 5px;
+    height: 8px;
+    background-image: url("images/icon024.png");
+    margin-right: 5px;
+}
+.PgHallArticle ul li a {
+    color: #666666;
+    text-decoration: none;
+}
+.PgHallArticle ul li a:hover {
+    color: #FF9300;
+}
+.PgHallBtn {
+    width: 75px;
+    height: 30px;
+    font-size: 14px;
+    border-radius: 3px;
+    line-height: 30px;
+    text-align: center;
+    background-color: #FF9300;
+    margin-bottom: 10px;
+}
+.PgHallBtn:hover {
+    background-color: #ff8a00;
 
+}
+.PgHallBtn a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+}
+.PgHallBtn.Free {
+    width: 73px;
+    height: 28px;
+    line-height: 28px;
+    border:1px solid #cdcdcd;
+    background-color: inherit;
+}
+.PgHallBtn.Free a {
+    color: #ACACAC;
+
+}
+.PgHallBtn.Free:hover {
+    border:1px solid #FF9300;
+    background-color: #FF9300;
+}
+.PgHallBtn.Free a:hover {
+    color: #fff;
+}
+.PgMain h3 {
+    font-size: 14px;
+    color: #333333;
+    text-align: center;
+    padding: 35px 0 10px;
+}
+.PgHallListBox {
+    height: 135px;
+    border: 1px solid #f1f1f1;
+    overflow: hidden;
+}
+.PgHallListBox ul.List {
+    width: 10%;
+    float: left;
+    padding: 15px 0 10px;
+    margin: 0 2.5%;
+}
+.PgHallListBox ul.List li {
+    height: 12px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+.PgHallListBox ul.List li a {
+    color: #666666;
+    text-decoration: none;
+}
+.PgHallListBox ul.List li a:hover {
+    color: #FF9300;
+}
+.PgHallListBox ul.List li i {
+    display: inline-block;
+    vertical-align: middle;
+    width: 5px;
+    height: 8px;
+    background-image: url("images/icon024.png");
+    margin-right: 5px;
+}
+ul.PgHallBrand {
+    width: 39.9%;
+    height: 100%;
+    float: right;
+}
+ul.PgHallBrand li {
+    width: 24%;
+    height: 69px;
+    border: 1px solid #f1f1f1;
+    margin: -1px -1px 0 0;
+    float: right;
+    font-size: 12px;
+    text-align: center;
+}
+ul.PgHallBrand li:hover {
+    background-color: #FFFDF8;
+}
+ul.PgHallBrand li a {
+    display: block;
+    color: #666666;
+    text-decoration: none;
+}
+ul.PgHallBrand li  .Pic {
+    width: 60px;
+    height: 20px;
+    margin: 15px auto 10px;
+}
 .PgBanner {
     position: relative;
     width: 100%;
@@ -1426,7 +1618,6 @@ ul.GameJpBox li .Jpt span {
     background-position: center;
     background-size: cover;
 }
-
 .PgGo {
     position: absolute;
     width: 35px;
