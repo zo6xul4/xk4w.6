@@ -1,5 +1,5 @@
 a, dl, dt, dd, b, body, em, ul, li, i, span, h1, h2, h3, h4, h5, h6, p, select, button, input, textarea {
-    font-family: "Microsoft YaHei", "微软雅黑", '黑体', "Arial";
+    font-family: "Arial","Microsoft YaHei", "微软雅黑", '黑体';
     outline: none;
     font-style: normal;
 }
@@ -594,13 +594,13 @@ ol.flex-control-nav li a.flex-active {
 
 .SearchBar {
     height: 80px;
-    padding: 15px;
+    padding: 15px 15px 7px;
     background-color: rgba(0, 0, 0, .6);
     border-radius: 5px;
 }
 
 .SearchBox {
-    width: 540px;
+    width: 545px;
     height: 45px;
     background-color: #fff;
     border-radius: 5px;
@@ -4899,8 +4899,22 @@ ul.PlayGameRecent li img {
         width: 540px;
         margin-left: -270px;
     }
+    .SearchBar {
+        height: 75px;
+        padding: 15px 10px 0px;
+    }
     .SearchBox {
-        width: 440px;
+        width: 475px;
+        height: 36px;
+        border-radius: 3px;
+    }
+    .SearchBox input {
+        font-size: 14px;
+        height: 36px;
+    }
+    .SearchBtn {
+        width: 40px;
+        height: 36px;
     }
     .SearchOption {
         width: 510px;
