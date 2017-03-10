@@ -5025,6 +5025,9 @@ input[type=radio]:checked + label .select-bonus {
 .bank-icon.bank099 {
   background-image: url("images/bank-logo/001-099.png"); }
 
+.bank-icon.bank000 {
+  background-image: url("images/bank-logo/000-000.png"); }
+
 .bank-name {
   font-size: 1.6rem;
   padding-left: 1rem;
