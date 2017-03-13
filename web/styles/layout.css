@@ -4364,7 +4364,9 @@ p.LoginTimes i {
     color: #666666;
     margin-bottom: 40px;
 }
-
+.HcW50 {
+    width: 50%;
+}
 ul.HelpCenterArticlesmNav {
     margin-bottom: 40px;
 }
@@ -4372,6 +4374,7 @@ ul.HelpCenterArticlesmNav {
 ul.HelpCenterArticlesmNav li {
     font-size: 14px;
     line-height: 22px;
+    margin-bottom: 5px;
 }
 
 ul.HelpCenterArticlesmNav li a {
