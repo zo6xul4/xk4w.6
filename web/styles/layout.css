@@ -1,5 +1,5 @@
 a, dl, dt, dd, b, body, em, ul, li, i, span, h1, h2, h3, h4, h5, h6, p, select, button, input, textarea {
-    font-family: "Arial","Microsoft YaHei", "微软雅黑", '黑体';
+    font-family: Arial,"Lucida Grande","Microsoft Yahei","Hiragino Sans GB","Hiragino Sans GB W3",SimSun,"PingFang SC",STHeiti;
     outline: none;
     font-style: normal;
 }
@@ -16,7 +16,10 @@ body.ShowAll {
 }
 
 /*共用樣式*/
-
+div {
+    -ms-behavior: url(backgroundsize.min.htc);
+    behavior: url(backgroundsize.min.htc);
+}
 input {
     appearance: none;
     -moz-appearance: none;
@@ -121,10 +124,11 @@ input {
 }
 
 .Btn {
+    position: relative;
     width: 140px;
     height: 35px;
     background-color: #FF9E00;
-    font-size: 18px;
+    font-size: 16px;
     text-align: center;
     line-height: 35px;
     border-radius: 5px;
@@ -187,7 +191,7 @@ input {
     width: 100%;
     height: 68px;
     background-color: #fff;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, .3);
+    box-shadow: 0 2px 0px rgba(0, 0, 0, .06);
     z-index: 110;
 }
 
@@ -230,7 +234,7 @@ ul.HeaderNav {
 
 ul.HeaderNav li {
     height: 100%;
-    font-size: 15px;
+    font-size: 16px;
     line-height: 68px;
     float: left;
 }
@@ -259,22 +263,23 @@ ul.HeaderNav li.Active a {
 
 ul.HeaderNav li span {
     display: inline-block;
-    width: 10px;
-    height: 5px;
+    width: 8px;
+    height: 4px;
     background-image: url("images/icon001.png");
+    background-size: 100%;
     vertical-align: middle;
     margin-left: 5px;
 }
 
 ul.HeaderNav li:hover span {
-    background-position: 0 -5px;
+    background-position: 0 -4px;
 }
 
 
 /*下拉滑入樣式*/
 
 ul.HeaderNav li.DropDown:hover {
-    line-height: 63px;
+    line-height: 62px;
 }
 
 ul.HeaderNav li.DropDown:hover a {
@@ -335,11 +340,11 @@ ul.HeaderNav li ol.DropDownNav li i:before {
     position: absolute;
     width: 0;
     height: 0;
-    border-width: 8px;
+    border-width: 7px;
     border-style: solid;
     border-color: transparent #f46240 transparent transparent;
     top: 0;
-    left: -16px;
+    left: -14px;
 }
 
 ul.HeaderNav li ol.DropDownNav li i.New {
@@ -371,114 +376,78 @@ ul.HeaderNav li.DropDown.Active:hover ol.DropDownNav li a {
 
 
 /*登入註冊*/
-
 ul.HeaderLRNav {
     list-style: none;
     margin: 0;
     padding: 0;
+    width: auto;
+    height: 30px;
+    padding:5px;
+    border-radius: 40px;
+    float: right;
+    margin-top: 14px;
+}
+ul.HeaderLRNav.Login {
+    background-color: #FFF7EC;
+}
+ul.HeaderLRNav li {
+    height: 30px;
+    border-radius: 30px;
+    font-size: 14px;
+    line-height: 30px;
+    text-align: center;
     float: right;
 }
-
-ul.HeaderLRNav li {
-    height: 100%;
-    color: #C9C9C9;
-    font-size: 14px;
-    line-height: 68px;
-    float: left;
-    margin: 0 0 0 6px;
-}
-
 ul.HeaderLRNav li a {
     display: block;
-    max-width: 100px;
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    color: #FF9300;
+    color: #3b3b3b;
     text-decoration: none;
+    padding:0 10px;
 }
-
-ul.HeaderLRNav.ColorBlack li a {
-    color: #333333;
+ul.HeaderLRNav li.Register,ul.HeaderLRNav li.Deposit {
+    min-width: 75px;
+    background-color:#FF9300;
 }
-
-ul.HeaderLRNav li a:hover {
-    text-decoration: underline;
+ul.HeaderLRNav li.Register:hover,ul.HeaderLRNav li.Deposit:hover {
+    background-color: #FF9E00;
 }
-
-ul.HeaderLRNav li i {
-    position: relative;
-    display: inline-block;
-    vertical-align: middle;
-    width: 18px;
-    height: 18px;
-    margin-right: 5px;
+ul.HeaderLRNav li.Register a,ul.HeaderLRNav li.Deposit a  {
+    color: #fff;
 }
-
-ul.HeaderLRNav li i img {
-    position: absolute;
-    top: -1px;
+ul.HeaderLRNav li.Login {
+    background-color:inherit;
 }
-
-
-/*語系*/
-
-ul.HeadrLanguage {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    float: right;
-    margin-top: 21px;
-}
-
-ul.HeadrLanguage li {
-    width: 24px;
-    height: 24px;
-    border-radius: 24px;
-    background-image: url("images/country.png");
-    background-size: 100%;
+.HeaderLive800,.HeaderMember {
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    background-color:#FF9300;
+    background-image: url("images/icon025.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 50%;
     text-indent: -9999px;
-    float: left;
-    margin: 0 5px;
+    float: right;
+    margin: 14px 0 0 5px;
 }
-
-ul.HeadrLanguage li.cn.Active {
-    background-position: 0 -24px;
+.HeaderMember {
+    background-image: url("images/icon026.png");
 }
-
-ul.HeadrLanguage li.en {
-    background-position: 0 -48px;
+.HeaderLive800:hover,.HeaderMember:hover {
+    background-color: #FF9E00;
 }
-
-ul.HeadrLanguage li.en.Active {
-    background-position: 0 -72px;
-}
-
-ul.HeadrLanguage li a {
+.HeaderLive800 a,.HeaderMember a {
     display: block;
     width: 100%;
     height: 100%;
 }
-
-ul.HeadrLanguage li:hover {}
-
-ul.HeadrLanguage li:hover a, ul.HeadrLanguage li.Active:hover a {
-    color: #fff;
-}
-
-ul.HeadrLanguage li.Active {}
-
-ul.HeadrLanguage li.Active a {
-    color: #FF9300;
-}
-
-
 /*輪播*/
 
 .Banner {
     position: relative;
     width: 100%;
     height: auto;
+    overflow: hidden;
     padding-bottom: 33.333333%;
     background-color: #D8D8D8;
     z-index: 1;
@@ -519,16 +488,17 @@ ul.HeadrLanguage li.Active a {
 ol.flex-control-nav, .flexskv {
     position: absolute;
     width: 110px;
+    height: 325px;
     z-index: 2;
     top: 45%;
-    margin-top: -140px;
+    margin-top: -162.5px;
     right: 40px;
 }
 
 ol.flex-control-nav li, .flexskv .flexskvImg {
     width: 110px;
     height: 60px;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     box-shadow: 0 0 4px rgba(0, 0, 0, .15);
 }
 
@@ -612,9 +582,9 @@ ol.flex-control-nav li a.flex-active {
     width: 100%;
     height: 100%;
     border: none;
-    text-indent: 10px;
+    text-indent: 15px;
     font-size: 16px;
-    color: #3b3b3b;
+    color: #666;
 }
 
 .SearchOption {
@@ -657,6 +627,7 @@ ol.flex-control-nav li a.flex-active {
     height: 45px;
     border-radius: 5px;
     background-image: url("images/searchicon.png");
+    background-size: 24px 24px;
     background-repeat: no-repeat;
     background-position: center;
     background-color: #FF9E00;
@@ -687,8 +658,8 @@ ol.flex-control-nav li a.flex-active {
 }
 
 .RadioStyle1 .Radio {
-    width: 18px;
-    height: 18px;
+    width: 16px;
+    height: 16px;
     background-image: url("images/radio1.png");
     float: left;
     margin-right: 5px;
@@ -700,7 +671,7 @@ ol.flex-control-nav li a.flex-active {
 
 .RadioStyle1 p {
     font-size: 14px;
-    line-height: 18px;
+    line-height: 16px;
     color: #fff;
     float: left;
 }
@@ -764,7 +735,154 @@ ol.flex-control-nav li a.flex-active {
     height: auto;
     margin-bottom: 10px;
 }
-
+.ActivityBox.Fish {
+    margin-bottom: 35px;
+}
+.Title {
+    border-top: 3px solid #FBB54C;
+    border-left: 1px solid #F3F3F3;
+    border-right: 1px solid #F3F3F3;
+    border-bottom: 1px solid #F3F3F3;
+    padding: 0 10px;
+    line-height: 42px;
+}
+.Title h2 {
+    font-size: 18px;
+    color: #333333;
+    float: left;
+}
+.Title p {
+    font-size: 14px;
+    float: right;
+}
+.Title p a {
+    color: #999999;
+    text-decoration: none;
+}
+.Title p a:hover {
+    text-decoration: underline;
+}
+.SptBox,.ColorBox {
+    height: auto;
+    overflow: hidden;
+    margin-bottom: 35px;
+}
+.SptBox .Pic {
+    width: 100%;
+    height: 140px;
+    background-color: #dddddd;
+}
+.SptBox .Article {
+    background-color: #fafafa;
+    padding: 10px;
+}
+.SptBox .Article h1 {
+    font-size: 12px;
+    color:#FBB54C;
+    margin-bottom: 5px; 
+}
+.SptBox .Article h1 span {
+    color: #666666;
+    float: right;
+}
+.SptBox .Article h2 {
+    font-size: 14px;
+    color: #333333;
+}
+.SptBox ul {
+    margin-top: -1px;
+}
+.SptBox ul li  {
+    border-left: 1px solid #F3F3F3;
+    border-right: 1px solid #F3F3F3;
+    border-bottom: 1px solid #F3F3F3;
+    line-height: 36px;
+}
+.SptBox ul li:hover {
+    background-color: #FFF7EC;
+}
+.SptBox ul li a {
+    display: block;
+    padding: 0 10px;
+    text-decoration: none;
+}
+.SptBox ul li h2 {
+    font-size: 14px;
+    color: #333333;
+    float: left;
+}
+.SptBox ul li h2 span {
+    margin-left: 10px;
+}
+.SptBox ul li h3 {
+    font-size: 14px;
+    color: #3EACE9;
+    float: left;
+    margin-left: 10px;
+}
+.ColorBox ul li {
+    border: 1px solid #FA7838;
+    margin-top: 5px;
+}
+.ColorBox ul li a {
+    display: block;
+    width: 100%;
+}
+.ColorBox ul li .Pic {
+    width: 130px;
+    height: 50px;
+    margin-right: 10px;
+    background-color: #dddddd;
+    float: left;
+}
+.ColorBox ul li p {
+    font-size: 14px;
+    color:#FA7838;
+    line-height: 50px;
+    float: left;
+}
+.ColorBox ul li i {
+    width: 6px;
+    height: 10px;
+    background-image: url("images/icon028.png");
+    background-size: 100%;
+    float: right;
+    margin-top: 20px;
+    margin-right: 10px;
+}
+.ColorBox ul li.Color2  {
+    border: 1px solid #53B8EA;
+}
+.ColorBox ul li.Color2 p {
+    color: #53B8EA;
+}
+.ColorBox ul li.Color2 i {
+    background-position: 0 -10px;
+}
+.ColorBox ul li.Color3  {
+    border: 1px solid #FFB80E;
+}
+.ColorBox ul li.Color3 p {
+    color: #FFB80E;
+}
+.ColorBox ul li.Color3 i {
+    background-position: 0 -20px;
+}
+.ColorBox ul li:hover {
+    background-color: #FA7838;
+}
+.ColorBox ul li.Color2:hover {
+    background-color: #53B8EA;
+}
+.ColorBox ul li.Color3:hover {
+    background-color: #FFB80E;
+}
+.ColorBox ul li:hover p {
+    color: #fff;
+}
+.ColorBox ul li:hover i {
+    background-position: bottom;
+}
 .PgBox {
     width: 100%;
     height: auto;
@@ -967,9 +1085,9 @@ ul.OfferBox li .Article {
 ul.OfferBox li .Article p {
     height: 40px;
     font-size: 14px;
-    line-height: 22px;
+    line-height: 20px;
     overflow: hidden;
-    color: #666666;
+    color: #000;
     margin-bottom: 10px;
     transition: all ease-out .2s;
 }
@@ -1012,20 +1130,23 @@ ul.GameJpBox li:hover {
 }
 
 ul.GameJpBox li .Article {
+    position: relative;
     width: 460px;
+    height: 150px;
     float: left;
 }
 
 ul.GameJpBox li .Pic {
     width: 220px;
+    height: 150px;
+    overflow: hidden;
     float: left;
     margin-right: 20px;
 }
 
 ul.GameJpBox li .Pic img {
     width: 100%;
-    height: 160px;
-    overflow: hidden;
+    height: 100%;
 }
 
 ul.GameJpBox li a {
@@ -1046,23 +1167,25 @@ ul.GameJpBox li:hover h2 {
 
 ul.GameJpBox li p {
     font-size: 14px;
-    line-height: 22px;
+    line-height: 20px;
     color: #666666;
     margin-bottom: 5px;
 }
 
 ul.GameJpBox li .Jpt {
-    font-size: 18px;
+    font-size: 16px;
     color: #3EACE9;
-    margin-bottom: 5px;
 }
 
 ul.GameJpBox li .Jpt span {
     font-size: 20px;
+    margin-left: 5px;
 }
 
 .GameClass {
+    position: absolute;
     width: 100%;
+    bottom: 0;
 }
 
 .GameClassBox {
@@ -1077,9 +1200,10 @@ ul.GameJpBox li .Jpt span {
 
 .GameClassBox i {
     display: inline-block;
-    width: 20px;
+    width: 23px;
     height: 20px;
     vertical-align: middle;
+    background-size: 100%;
     margin-right: 5px;
 }
 
@@ -1130,13 +1254,15 @@ ul.GameJpBox li .Jpt span {
 
 .HotBtn {
     position: relative;
-    width: 40px;
-    height: 36px;
-    font-size: 18px;
+    width: 37px;
+    height: 33px;
+    font-size: 17px;
+    text-shadow: 0 1px 2px rgba(0,0,0,.1);
     color: #fff;
     text-align: center;
-    line-height: 36px;
+    line-height: 33px;
     background-image: url("images/icon005.png");
+    background-size: cover;
     float: right;
     cursor: pointer;
 }
@@ -1149,6 +1275,7 @@ ul.GameJpBox li .Jpt span {
     position: absolute;
     font-size: 12px;
     color: #FF9E00;
+    text-shadow: 0 0 0 rgba(0,0,0,0);
     right: 45px;
 }
 
@@ -1286,12 +1413,14 @@ ul.GameJpBox li .Jpt span {
 }
 
 
+
 /*下載專區*/
 
 .DownLoadBox {
     width: 100%;
     height: auto;
     overflow: hidden;
+    margin-top: -20px;
 }
 
 .DownLoadBox ul {
@@ -1308,12 +1437,13 @@ ul.GameJpBox li .Jpt span {
 
 .DownLoadBox ul li h2 {
     font-size: 14px;
-    color: #333333;
+    color: #FDA728;
     margin-bottom: 5px;
 }
 
 .DownLoadBox ul li p {
-    font-size: 14px;
+    font-size: 12px;
+    line-height: 18px;
     color: #666666;
 }
 
@@ -1321,7 +1451,17 @@ ul.GameJpBox li .Jpt span {
     text-decoration: underline;
 }
 
-
+.DownLoadBox ul li i {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    float: left;
+    vertical-align: middle;
+}
+.DownLoadBox ul li i img  {
+    width: 100%;
+}
 /*頁尾*/
 
 .Footer {
@@ -1358,18 +1498,57 @@ ul.GameJpBox li .Jpt span {
 
 .FooterNav ul li {
     font-size: 14px;
+    color: #C2C2C2;
     margin-bottom: 10px;
 }
-
 .FooterNav ul li a {
     color: #C2C2C2;
     text-decoration: none;
 }
-
 .FooterNav ul li a:hover {
     color: #fff;
 }
-
+/*語系*/
+.FooterNav ul li.FooterNavSelect {
+       cursor: pointer;
+}
+.FooterNav ul li.FooterNavSelect i {
+    display: inline-block;
+    width: 8px;
+    height: 4px;
+    background-image: url(images/icon027.png);
+    background-size: 100%;
+    vertical-align: middle;
+    margin-left: 5px;
+}
+.FooterNav ul li.FooterNavSelect:hover .FooterNavOption {
+    opacity: 1;
+}
+.FooterNavOption {
+    opacity: 0;
+    overflow: hidden;
+    border-radius: 3px;
+    margin-top: 5px;
+    transition: all ease-out .3s;
+}
+.FooterNavOption ul li {
+    line-height: 25px;
+    font-size: 12px;
+    background-color: #fafafa;
+    border-bottom: 1px solid #dddddd;
+    margin: 0;
+}
+.FooterNavOption ul li a {
+    display: block;
+    padding: 0 10px;
+    color: #333333;
+}
+.FooterNavOption ul li:hover {
+    background-color: #fff;
+}
+.FooterNavOption ul li:hover a {
+    color: #333333;
+}
 .Qrcode {
     width: 100px;
     font-size: 14px;
@@ -2312,7 +2491,7 @@ a .GameJumpBox.Free {
     font-size: 14px;
     line-height: 30px;
     margin-left: 10px;
-    left: 10px;
+    left: 0px;
     bottom: 10px;
 }
 
@@ -2334,7 +2513,7 @@ a .GameJumpBox.Free {
     color: #FF9E00;
     line-height: 30px;
     margin-right: 10px;
-    right: 10px;
+    right: 0px;
     bottom: 10px;
 }
 
@@ -4326,6 +4505,7 @@ ul.HelpCenterArticleColumn li {
     border-radius: 3px;
     float: left;
     margin-right: 10px;
+    margin-bottom: 10px;
 }
 
 .HelpCenterSmNav ul li a {
@@ -4453,15 +4633,29 @@ ul.HelpCenterArticleColumn li {
 .PlayGameHeader .Xbox {
     top: 12.5px;
 }
-
-.PlayGameHeader .HeaderLRNav {
+.PlayGameHeader ul.HeaderLRNav {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    float: right;
     margin-right: 60px;
 }
-
 .PlayGameHeader ul.HeaderLRNav li {
+    height: 100%;
+    color: #C9C9C9;
+    font-size: 14px;
     line-height: 50px;
+    float: left;
+    margin: 0 0 0 6px;
 }
-
+.PlayGameHeader ul.HeaderLRNav li a {
+    display: block;
+    color: #FF9300;
+    text-decoration: none;
+}
+.PlayGameHeader ul.HeaderLRNav li a:hover {
+    text-decoration: underline;
+}
 .PlayGameFooter {
     position: absolute;
     width: 100%;
@@ -4885,11 +5079,14 @@ ul.PlayGameRecent li img {
         line-height: 52px;
     }
     /*登入註冊*/
-    ul.HeaderLRNav li {
-        line-height: 58px;
+    ul.HeaderLRNav {
+        margin-top: 9px;
     }
-    ul.HeaderLRNav li a {
-        max-width: 110px;
+    ul.HeaderLRNav li {
+        font-size: 12px;
+    }
+    .HeaderLive800,.HeaderMember {
+        margin-top: 9px;
     }
     /*語系*/
     ul.HeadrLanguage {
@@ -4915,6 +5112,7 @@ ul.PlayGameRecent li img {
     .SearchBtn {
         width: 40px;
         height: 36px;
+        border-radius: 3px;
     }
     .SearchOption {
         width: 510px;
@@ -4923,8 +5121,6 @@ ul.PlayGameRecent li img {
         width: 480px;
     }
 }
-
-
 /*動態*/
 
 @keyframes Move1 {
@@ -4941,7 +5137,7 @@ ul.PlayGameRecent li img {
     }
 }
 
-
+/*showma*/
 /*頁碼*/
 
 .Page {
@@ -4953,7 +5149,6 @@ ul.PlayGameRecent li img {
 .Page ul {
     display: inline-block;
 }
-
 .Page ul li {
     position: relative;
     border-radius: 3px;
