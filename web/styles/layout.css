@@ -1597,10 +1597,117 @@ ul.GameJpBox li .Jpt span {
 
 /*娛樂場*/
 .PgSmallBanner {
-    width: 100%;
+    position: relative;
+    width: 1000px;
     height: 200px;
     background-color: #f5f5f5;
     background-position: center;
+    margin: 20px auto 0;
+}
+.PgDividendBox {
+    position: absolute;
+    width: 440px;
+    height: 110px;
+    border-radius: 3px;
+    top: 50%;
+    margin-top: -55px;
+    left: 100px;
+    background-color: #fff;
+    overflow: hidden;
+}
+.PgDividendLeft {
+    position: relative;
+    width: 330px;
+    height: 100%;
+    background-color: #FFFCF8;
+    float: left;
+}
+.PercentageBox {
+    position: relative;
+    width: 300px;
+    height: 5px;
+    border-radius: 5px;
+    background-color:#f5f5f5;
+    clear: both;
+    margin-bottom: 10px;
+}
+.PgLv {
+    padding: 10px 15px;
+}
+.PgLv p {
+    font-size: 12px;
+    color: #333333;
+    margin-bottom: 10px;
+}
+.PgLv p span {
+    color: #FF9E00;
+}
+.Percentage {
+    height: 100%;
+    border-radius: 5px;
+    background-color:#FF9E00;
+}
+.PgDividendRight {
+    width: 110px;
+    height: 100%;
+    background-color:#FF9E00;
+    float: left;
+}
+.PgDividendRight h2 {
+    font-size: 35px;
+    font-weight: bold;
+    font-family: "Ariel";
+    color: #fff;
+    text-align: center;
+    text-shadow: 0 0 4px rgba(0,0,0,.15);
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+.PgDividendRight h2 span {
+    font-size: 20px;
+}
+.PgDividendBtn {
+    width: 75px;
+    height: 30px;
+    font-size: 14px;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 3px;
+    border: 1px solid #fff;
+    margin: 0 auto;
+    text-shadow: 0 0 4px rgba(0,0,0,.15);
+    box-shadow: 0 0 4px rgba(0,0,0,.15);
+}
+.PgDividendBtn:hover {
+    background-color: #fff;
+    text-shadow: 0 0 0 rgba(0,0,0,0);
+}
+.PgDividendBtn a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+}
+.PgDividendBtn:hover a {
+    color: #FF9E00;
+}
+.PgDividendTitle {
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    background-color: #fff;
+    border-top: 3px solid #FF9E00;
+    border-bottom: 1px solid #dddddd;
+}
+.PgDividendTitle h2 {
+    font-size: 14px;
+    color: #333333;
+    float: left;
+    margin: 0 10px;
+}
+.PgDividendTitle p {
+    font-size: 12px;
+    color: #666666;
+    float: left;
 }
 .PgHall {
     width: 191px;
@@ -1626,10 +1733,17 @@ ul.GameJpBox li .Jpt span {
     border-top: 3px solid #FF9300;
     background-color: #fff;
 }
+.PgHallTitle.Color2 {
+    border-top: 3px solid #3EACE9;
+}
+.PgHallTitle.Color3 {
+    border-top: 3px solid #FF6050;
+}
 .PgHallPic {
     width: 100%;
     height: 114px;
     background-color: #f5f5f5;
+    overflow: hidden;
 }
 .Double .PgHallPic {
     height: 140px;
@@ -1640,13 +1754,13 @@ ul.GameJpBox li .Jpt span {
 .PgHallArticle p {
      font-size: 12px;
      line-height:18px;
-    color: #666666;
+    color: #333333;
     border-bottom: 1px solid #CDCDCD;
     padding-bottom: 10px;
     margin-bottom: 10px;
 }
 .PgHallArticle p a {
-    color: #333333;
+    color: #000000;
     text-decoration: none;
 }
 .PgHallArticle ul {
@@ -1692,12 +1806,17 @@ ul.GameJpBox li .Jpt span {
     border-radius: 3px;
     line-height: 30px;
     text-align: center;
-    background-color: #FF9300;
+    background-color: #FF6050;
     margin-bottom: 10px;
 }
 .PgHallBtn:hover {
-    background-color: #ff8a00;
-
+    background-color: #FF4835;
+}
+.PgHallBtn.Active {
+    background-color: #FF9E00;
+}
+.PgHallBtn.Active:hover {
+    background-color:#FF9300;
 }
 .PgHallBtn a {
     display: block;
@@ -1713,11 +1832,10 @@ ul.GameJpBox li .Jpt span {
 }
 .PgHallBtn.Free a {
     color: #ACACAC;
-
 }
 .PgHallBtn.Free:hover {
-    border:1px solid #FF9300;
-    background-color: #FF9300;
+    border:1px solid #FF9E00;
+    background-color: #FF9E00;
 }
 .PgHallBtn.Free a:hover {
     color: #fff;
@@ -2066,13 +2184,121 @@ ul.PgHallBrand li  .Pic {
     position: absolute;
     margin-top: 31px;
 }
+.GameDividendBox {
+    height: 97px;
+    border-top: 3px solid #FFC412;
+    border-left: 1px solid  #f1f1f1;
+    border-right: 1px solid  #f1f1f1;
+    border-bottom: 1px solid #f1f1f1;
+}
+.GameDividendCenter {
+    width: 53.8%;
+    height: 100%;
+    background-color: #FFFCF8;
+    border-left: 1px solid #f1f1f1;
+    border-right: 1px solid #f1f1f1;
+    float: left;
+    display: flex;
+    align-items: center;
+}
+.GameDividendLR {
+    width: 23%;
+    height: 100%;
+    float: left;
+    display: flex;
+    align-items: center;
+}
+.GameDividendArticle {
+    margin: 0 auto;
+}
+.GameDividendLR h2 {
+    font-size: 24px;
+    color:#3EACE9;
+    margin-bottom: 5px;
+}
+.GameDividendLR p {
+    font-size: 14px;
+    color:#666666;
+}
+.GameDividendLR h3 {
+    font-size: 35px;
+    text-align: center;
+    color:#333333;
+    margin-bottom: 5px;
+}
+.GameDividendLR h3 span {
+    font-size: 20px;
+}
+.GameDividendBtn {
+    width: 75px;
+    height: 30px;
+    border-radius: 3px;
+    font-size: 14px;
+    text-align: center;
+    line-height: 30px;
+    background-color:#3EACE9;
+    margin: 0 auto;
+}
+.GameDividendBtn a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+}
+.GameLv {
+    position: relative;
+    width: 500px;
+    margin: 0 auto;
+}
+.GameLv p {
+    font-size: 14px;
+    line-height: 18px;
+    color: #333333;
+}
+.GameLv p.MarginBottom {
+    margin-bottom: 15px;
+}
+.GameLv p.Now {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+}
+.GameLv p.Now span {
+    font-size: 18px;
+    color:#3EACE9;
+}
+.GameLv .PercentageBox {
+    position: relative;
+    width: 100%;
+    background-color: #FFE79C;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.GameLv .Percentage {
+    background-color: #FFC412;
+}
+.PercentageStart,.PercentageEnd {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    background-color: #FFE79C;
+    left: 0;
+    top: 50%;
+    margin-top: -10px;
+}
+.PercentageStart.Active,.PercentageEnd.Active {
+    background-color: #FFC412;
+}
+.PercentageEnd {
+    left: inherit;
+    right: 0;
+}
 .GameMain {
     width: 1000px;
     height: auto;
     margin: 0 auto;
     padding-top: 52px;
 }
-
 .SameBanner {
     position: relative;
     width: 1000px;
@@ -2081,7 +2307,6 @@ ul.PgHallBrand li  .Pic {
     margin-bottom: 5px;
     z-index: 0;
 }
-
 .SameBanner ul.slides {
     position: absolute;
     width: 100%;
