@@ -944,7 +944,7 @@ ol.flex-control-nav li a.flex-active {
     position: fixed;
     width: 100%;
     left: 0;
-    top: 110px;
+    top: 120px;
     z-index: 100;
 }
 
@@ -5272,7 +5272,7 @@ ul.PlayGameRecent li img {
         top: 58px;
     }
     .TitleBox.Active {
-        top: 100px;
+        top: 110px;
     }
     .Header {
         height: 58px;
