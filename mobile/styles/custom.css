@@ -2670,6 +2670,15 @@ input[type="date"] {
 .appbanner-warp.banner3 {
   background-image: url("images/appbanner3.jpg"); }
 
+.appbanner-warp.banner4 {
+  background-image: url("images/appbanner4.jpg"); }
+
+.appbanner-warp.banner5 {
+  background-image: url("images/appbanner5.jpg"); }
+
+.appbanner-warp.banner6 {
+  background-image: url("images/appbanner6.jpg"); }
+
 .gametitle-warp {
   width: 100%;
   padding: 10px;
@@ -4386,6 +4395,16 @@ _::-webkit-full-page-media, _:future, :root .promotion-word-warp .btn-go > i {
 
 .pie-warp .pie-box {
   width: 128px; }
+
+.pie-warp .pie-box.nodata {
+  width: 128px;
+  height: 128px; }
+
+.pie-warp .pie-box.nodata .img {
+  width: 100%;
+  height: 100%;
+  background-image: url(images/no-record.png);
+  background-size: cover; }
 
 .pie-warp .pie-box .pie-zone {
   width: 100%;
@@ -6241,7 +6260,7 @@ ul.filter-block li label.label-filter-name span {
     padding-top: 150px;
     margin-bottom: 10px; }
 
-  .col-xs-6 {
+  .col-xs-6.appdownload {
     width: 33.333333%; } }
 @media only screen and (min-device-width: 320px) and (-webkit-min-device-pixel-ratio: 2) and (device-aspect-ratio: 2 / 3), (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (device-aspect-ratio: 40 / 71) {
   .banner {
